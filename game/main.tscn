@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8wx3hdpdrw8p"]
+[gd_scene load_steps=4 format=3 uid="uid://c8wx3hdpdrw8p"]
 
 [ext_resource type="PackedScene" uid="uid://c2u2yasyfotxr" path="res://components/persistent/persistent_staging.tscn" id="1"]
-[ext_resource type="Texture2D" uid="uid://bkvj83shnbfwl" path="res://assets/splash/splash.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cbyxjonr42xi7" path="res://assets/splash/splash.png" id="2"]
 [ext_resource type="Script" uid="uid://shhk6ax4pxi5" path="res://game/main.gd" id="2_dmefr"]
 
 [node name="Main" instance=ExtResource("1")]
