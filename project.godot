@@ -8,16 +8,20 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="VR Tower (based on Godot XR Template)"
 run/main_scene="res://game/main.tscn"
-config/features=PackedStringArray("4.5")
+config/features=PackedStringArray("4.6")
 config/icon="res://icon.png"
 
 [autoload]
 
-XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
+XRToolsUserSettings="*uid://bvvyeew8p7voc"
 GameState="*res://game/game_state.tscn"
 
 [editor_plugins]

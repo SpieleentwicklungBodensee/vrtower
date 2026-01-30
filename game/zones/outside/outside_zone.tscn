@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://cjat5u6nsihgw"]
+[gd_scene format=3 uid="uid://cjat5u6nsihgw"]
 
 [ext_resource type="PackedScene" uid="uid://cvn48xcmsmkrb" path="res://game/zones/zone_base.tscn" id="1_sk0kv"]
 [ext_resource type="Material" uid="uid://csepeix2yvih" path="res://assets/prototype_materials/grass.tres" id="2_uryyw"]
@@ -118,7 +118,7 @@ size = Vector3(1, 3, 0.1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_wdgkd"]
 size = Vector3(1, 3, 0.2)
 
-[node name="OutsideZone" instance=ExtResource("1_sk0kv")]
+[node name="OutsideZone" unique_id=932116103 instance=ExtResource("1_sk0kv")]
 zone_info = ExtResource("3_wyepd")
 
 [node name="Skeleton3D" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L/Armature" index="0"]
@@ -177,69 +177,69 @@ transform = Transform3D(0.5408295, -0.8408129, 0.023173586, 0.08262676, 0.080524
 root_node = NodePath("../Hand_Nails_low_R")
 tree_root = SubResource("AnimationNodeBlendTree_if2vo")
 
-[node name="World" type="Node3D" parent="." index="1"]
+[node name="World" type="Node3D" parent="." index="1" unique_id=700250048]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="World" index="0"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="World" index="0" unique_id=1569723550]
 environment = ExtResource("8_82q6b")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World" index="1"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World" index="1" unique_id=1000080131]
 transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, 0.5, -0.5, 0, 8, 0)
 
-[node name="Ground" type="StaticBody3D" parent="World" index="2"]
+[node name="Ground" type="StaticBody3D" parent="World" index="2" unique_id=300829470]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Ground" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Ground" index="0" unique_id=2113575792]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 mesh = SubResource("QuadMesh_0144s")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Ground" index="1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Ground" index="1" unique_id=1917236152]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_ivc2m")
 
-[node name="Boundary1" type="StaticBody3D" parent="World" index="3"]
+[node name="Boundary1" type="StaticBody3D" parent="World" index="3" unique_id=172860431]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary1" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary1" index="0" unique_id=264634264]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.854276)
 mesh = SubResource("QuadMesh_mq77n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary1" index="1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary1" index="1" unique_id=1954348205]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.1937633)
 shape = SubResource("BoxShape3D_cvifd")
 
-[node name="Boundary2" type="StaticBody3D" parent="World" index="4"]
+[node name="Boundary2" type="StaticBody3D" parent="World" index="4" unique_id=2012526787]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 2, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary2" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary2" index="0" unique_id=1072779160]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3103413e-07, 0, 8.073176)
 mesh = SubResource("QuadMesh_mq77n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary2" index="1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary2" index="1" unique_id=2118519283]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0396949e-07, 0, 4.666277)
 shape = SubResource("BoxShape3D_cvifd")
 
-[node name="Boundary3" type="StaticBody3D" parent="World" index="5"]
+[node name="Boundary3" type="StaticBody3D" parent="World" index="5" unique_id=1248125490]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, 10)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary3" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary3" index="0" unique_id=580367845]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.490494e-07, 0, 7.924258)
 mesh = SubResource("QuadMesh_mq77n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary3" index="1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary3" index="1" unique_id=44086602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.282596e-07, 0, 4.898718)
 shape = SubResource("BoxShape3D_cvifd")
 
-[node name="Boundary4" type="StaticBody3D" parent="World" index="6"]
+[node name="Boundary4" type="StaticBody3D" parent="World" index="6" unique_id=1773461332]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary4" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary4" index="0" unique_id=301028941]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0156373e-06, 0, 8.245033)
 mesh = SubResource("QuadMesh_mq77n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary4" index="1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary4" index="1" unique_id=1274079994]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1156893e-07, 0, 5.426273)
 shape = SubResource("BoxShape3D_cvifd")
 
-[node name="Grass1" type="Node3D" parent="World" index="7"]
+[node name="Grass1" type="Node3D" parent="World" index="7" unique_id=267210150]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
 script = ExtResource("4_v2d8i")
 extend = Vector3(10, 0, 10)
@@ -247,133 +247,133 @@ instance_count = 3000
 mesh = SubResource("QuadMesh_pt6e2")
 material_override = SubResource("StandardMaterial3D_srm7c")
 
-[node name="Stone1" type="StaticBody3D" parent="World" index="8"]
+[node name="Stone1" type="StaticBody3D" parent="World" index="8" unique_id=322015813]
 transform = Transform3D(0.764321, 0.0519332, 0.642742, -0.26228, 0.935615, 0.236294, -0.589087, -0.349183, 0.72873, 7, 0, 8)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Stone1" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Stone1" index="0" unique_id=1769032542]
 transform = Transform3D(1, -1.42492e-07, 0, 3.63216e-08, 1, 0, 0, 1.49012e-08, 1, 0, 0, 0)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="World/Stone1" index="1"]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="World/Stone1" index="1" unique_id=201659181]
 transform = Transform3D(0.09562773, 0.006003242, -0.028623195, -0.008307592, 0.09941484, -0.006904334, 0.02804126, 0.00898036, 0.095566906, -0.68094856, 2.6779344, -10.266629)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="World/Stone1" index="2"]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="World/Stone1" index="2" unique_id=2046657395]
 transform = Transform3D(0.09562772, 0.006003242, -0.028623182, -0.008307586, 0.09941484, -0.0069043357, 0.028041268, 0.00898036, 0.0955669, 1.1828917, 2.804577, -8.699262)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="World/Stone1" index="3"]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="World/Stone1" index="3" unique_id=406884290]
 transform = Transform3D(0.09562771, 0.006003242, -0.028623173, -0.0083075855, 0.09941484, -0.006904334, 0.028041273, 0.00898036, 0.09556689, 2.9112191, 2.9220123, -7.2458525)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="World/Stone1" index="4"]
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="World/Stone1" index="4" unique_id=1815007091]
 transform = Transform3D(0.0956277, 0.006003242, -0.028623167, -0.008307585, 0.09941484, -0.006904334, 0.028041279, 0.00898036, 0.09556688, -3.6823568, 2.4739962, -12.790607)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="World/Stone1" index="5"]
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="World/Stone1" index="5" unique_id=988257163]
 transform = Transform3D(0.09562769, 0.006003242, -0.02862316, -0.008307582, 0.09941484, -0.006904332, 0.028041277, 0.00898036, 0.095566876, -2.1010342, 2.581443, -11.46082)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D7" type="MeshInstance3D" parent="World/Stone1" index="6"]
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="World/Stone1" index="6" unique_id=536919251]
 transform = Transform3D(0.09562769, 0.006003242, -0.02862316, -0.00830758, 0.09941484, -0.0069043357, 0.028041279, 0.00898036, 0.095566876, -2.4533875, 2.372585, -11.0249405)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D8" type="MeshInstance3D" parent="World/Stone1" index="7"]
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="World/Stone1" index="7" unique_id=332681689]
 transform = Transform3D(0.09562768, 0.006003242, -0.02862315, -0.008307573, 0.09941484, -0.0069043394, 0.02804129, 0.00898036, 0.095566854, -1.3601102, 1.3184897, -5.6376987)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D9" type="MeshInstance3D" parent="World/Stone1" index="8"]
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="World/Stone1" index="8" unique_id=1903514498]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623141, -0.008307573, 0.09941484, -0.0069043394, 0.02804129, 0.00898036, 0.09556685, -0.7187108, 1.6986806, -6.431142)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D10" type="MeshInstance3D" parent="World/Stone1" index="9"]
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="World/Stone1" index="9" unique_id=610770157]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623134, -0.008307573, 0.09941484, -0.0069043376, 0.02804129, 0.00898036, 0.09556684, -0.022703648, 2.1112404, -7.2921376)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D11" type="MeshInstance3D" parent="World/Stone1" index="10"]
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="World/Stone1" index="10" unique_id=286874439]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623134, -0.008307573, 0.09941484, -0.0069043376, 0.02804129, 0.00898036, 0.095566824, 3.5829334, 4.2484894, -11.752495)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D12" type="MeshInstance3D" parent="World/Stone1" index="11"]
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="World/Stone1" index="11" unique_id=310048618]
 transform = Transform3D(0.09562768, 0.006003242, -0.02862313, -0.008307573, 0.09941484, -0.0069043394, 0.02804129, 0.00898036, 0.095566824, 3.2633076, 4.0590305, -11.3571005)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D13" type="MeshInstance3D" parent="World/Stone1" index="12"]
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="World/Stone1" index="12" unique_id=2133289254]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623126, -0.008307573, 0.09941484, -0.0069043413, 0.02804129, 0.00898036, 0.095566824, 2.9659836, 3.8827915, -10.989295)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Stone1" index="13"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Stone1" index="13" unique_id=1844540036]
 transform = Transform3D(1, -1.42492e-07, 0, 3.63216e-08, 1, 0, 0, 1.49012e-08, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_f4wyk")
 
-[node name="Stone2" type="StaticBody3D" parent="World" index="9"]
+[node name="Stone2" type="StaticBody3D" parent="World" index="9" unique_id=983203879]
 transform = Transform3D(0.417223, -0.0502081, 0.907416, -0.0618827, 0.994586, 0.0834845, -0.906695, -0.0909851, 0.411857, -8, -0.4, 8)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Stone2" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Stone2" index="0" unique_id=1511573622]
 transform = Transform3D(0.99999964, -1.4156103e-07, 0, 4.4703484e-08, 0.9999997, 2.9802322e-08, 0, -3.7252903e-08, 1, -0.7923775, 3.5441294, 7.011613)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Stone2" index="1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Stone2" index="1" unique_id=1487687950]
 transform = Transform3D(1, -1.42492e-07, 0, 3.63216e-08, 1, 0, 0, 1.49012e-08, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_f4wyk")
 
-[node name="HouseEntrance" type="Node3D" parent="." index="2"]
+[node name="HouseEntrance" type="Node3D" parent="." index="2" unique_id=564195048]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.6)
 
-[node name="Exterior" type="CSGPolygon3D" parent="HouseEntrance" index="0"]
+[node name="Exterior" type="CSGPolygon3D" parent="HouseEntrance" index="0" unique_id=1705170407]
 use_collision = true
 polygon = PackedVector2Array(-3, 0, -3, 3, 0, 5, 3, 3, 3, 0, 0.5, 0, 0.5, 3, -0.5, 3, -0.5, 0)
 material = ExtResource("4_yw2go")
 
-[node name="Door" type="StaticBody3D" parent="HouseEntrance" index="1"]
+[node name="Door" type="StaticBody3D" parent="HouseEntrance" index="1" unique_id=1676028314]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -0.5)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="HouseEntrance/Door" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="HouseEntrance/Door" index="0" unique_id=904315009]
 mesh = SubResource("BoxMesh_s0cu3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="HouseEntrance/Door" index="1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HouseEntrance/Door" index="1" unique_id=250510719]
 shape = SubResource("BoxShape3D_lsqhn")
 
-[node name="ToHouseInterior" parent="." index="3" instance=ExtResource("7_omnq0")]
+[node name="ToHouseInterior" parent="." index="3" unique_id=1918209331 instance=ExtResource("7_omnq0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.7)
 zone_scene = "res://game/zones/house_interior/house_interior_zone.tscn"
 spawn_node_name = "FromOutside"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ToHouseInterior" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ToHouseInterior" index="0" unique_id=1034093144]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 shape = SubResource("BoxShape3D_wdgkd")
 
-[node name="FromHouseInterior" type="Marker3D" parent="." index="4"]
+[node name="FromHouseInterior" type="Marker3D" parent="." index="4" unique_id=1028338084]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -7.6)
 
-[node name="Rock1" parent="." index="5" instance=ExtResource("12_cxbia")]
+[node name="Rock1" parent="." index="5" unique_id=126446156 instance=ExtResource("12_cxbia")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.02816, 0.159056, 5.29193)
 item_id = "rock_outside_1"
 
-[node name="Rock2" parent="." index="6" instance=ExtResource("12_cxbia")]
+[node name="Rock2" parent="." index="6" unique_id=41590995 instance=ExtResource("12_cxbia")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.52816, 0.159056, 5.29193)
 item_id = "rock_outside_2"
 
-[node name="Rock3" parent="." index="7" instance=ExtResource("12_cxbia")]
+[node name="Rock3" parent="." index="7" unique_id=1772500761 instance=ExtResource("12_cxbia")]
 transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, 4.82816, 0.159056, 5.69193)
 item_id = "rock_outside_3"
 
-[node name="Crate1" parent="." index="8" instance=ExtResource("13_mtgv7")]
+[node name="Crate1" parent="." index="8" unique_id=775656815 instance=ExtResource("13_mtgv7")]
 transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -6, 0.5, -8.6)
 item_id = "crate_outside_1"
 
-[node name="Crate2" parent="." index="9" instance=ExtResource("13_mtgv7")]
+[node name="Crate2" parent="." index="9" unique_id=1099467577 instance=ExtResource("13_mtgv7")]
 transform = Transform3D(0.996195, 0, 0.0871557, 0, 1, 0, -0.0871557, 0, 0.996195, -4.7, 0.5, -8.6)
 item_id = "crate_outside_2"
 
-[node name="Crate3" parent="." index="10" instance=ExtResource("13_mtgv7")]
+[node name="Crate3" parent="." index="10" unique_id=1994638511 instance=ExtResource("13_mtgv7")]
 transform = Transform3D(1, 0, -2.23517e-08, 0, 1, 0, 2.23517e-08, 0, 1, -5.4, 1.5, -8.6)
 item_id = "crate_outside_3"
 
-[node name="StorageBox" parent="." index="11" instance=ExtResource("13_galon")]
+[node name="StorageBox" parent="." index="11" unique_id=1868015000 instance=ExtResource("13_galon")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -9)
 
-[node name="Toolbox" parent="." index="12" instance=ExtResource("14_68l3l")]
+[node name="Toolbox" parent="." index="12" unique_id=1402640202 instance=ExtResource("14_68l3l")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6, 0.117771, 4)
 
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand"]
