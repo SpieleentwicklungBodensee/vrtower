@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b8an5yh3pn66o"]
+
+[ext_resource type="Script" uid="uid://jjs0wq621nxk" path="res://game/objects/hiding_platform/hiding_platform.gd" id="1_b6y5g"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_twjr1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2oy5v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_it6h8"]
+transparency = 1
+albedo_color = Color(0.42352942, 0.8901961, 0.8235294, 0.49803922)
+
+[node name="HIDING_PLATFORM" type="Node3D" unique_id=295718761]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0, -0.1, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=332955535]
+script = ExtResource("1_b6y5g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1196023398]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.99999946, 0, 0, 0, 0.9999998, 0, 0, 0)
+shape = SubResource("BoxShape3D_twjr1")
+
+[node name="TILE35" type="MeshInstance3D" parent="StaticBody3D" unique_id=10747442]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999994, 0, 0, 0.014262367)
+mesh = SubResource("BoxMesh_2oy5v")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_it6h8")
