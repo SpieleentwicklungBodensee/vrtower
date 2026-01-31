@@ -1,5 +1,9 @@
 extends StaticBody3D
 
+@export var secondsOn: int = 4
+@export var secondsOff: int = 4
+@export var timeOffset: int = 0
+
 var counter: float = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -11,13 +15,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	counter += delta
 	
-	var phase = int(counter) % 8
+	var phase = int((counter) + timeOffset) % (secondsOff + secondsOn)
 	
 	if phase < 1:
 		self.flicker()
-	elif phase < 4:
+	elif phase < secondsOff:
 		self.doHide()
-	elif phase == 4:
+	elif phase == secondsOff:
 		self.flicker()
 	else:
 		self.doShow()

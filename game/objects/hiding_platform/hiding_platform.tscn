@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b8an5yh3pn66o"]
 
+[ext_resource type="Script" uid="uid://4np4wlsh12tx" path="res://game/objects/hiding_platform/hiding_platform_init.gd" id="1_1g2xq"]
 [ext_resource type="Script" uid="uid://jjs0wq621nxk" path="res://game/objects/hiding_platform/hiding_platform.gd" id="1_b6y5g"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_twjr1"]
@@ -12,6 +13,7 @@ albedo_color = Color(0.42352942, 0.8901961, 0.8235294, 0.49803922)
 
 [node name="HIDING_PLATFORM" type="Node3D" unique_id=295718761]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0, -0.1, 0)
+script = ExtResource("1_1g2xq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=332955535]
 script = ExtResource("1_b6y5g")

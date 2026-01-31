@@ -104,6 +104,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4703153, 3.9952793, -
 
 [node name="HIDING_PLATFORM2" parent="." index="10" unique_id=200929451 instance=ExtResource("5_6jlw4")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4703153, 3.9952793, -0.0011271238)
+timeOffset = 2
 
 [node name="HIDING_PLATFORM3" parent="." index="11" unique_id=1215392273 instance=ExtResource("5_6jlw4")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4703153, 3.9952793, 0.73478895)
