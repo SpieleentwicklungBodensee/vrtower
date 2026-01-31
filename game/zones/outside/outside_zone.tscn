@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cvn48xcmsmkrb" path="res://game/zones/zone_base.tscn" id="1_sk0kv"]
 [ext_resource type="Material" uid="uid://csepeix2yvih" path="res://assets/prototype_materials/grass.tres" id="2_uryyw"]
+[ext_resource type="PackedScene" uid="uid://fiul51tsyoop" path="res://addons/godot-xr-tools/functions/function_teleport.tscn" id="3_tk2pl"]
 [ext_resource type="Material" uid="uid://c7prktlpm7tmm" path="res://assets/prototype_materials/forest.tres" id="3_wfk2d"]
 [ext_resource type="Resource" uid="uid://to5lown6orfd" path="res://game/zones/outside/outside_zone_info.tres" id="3_wyepd"]
 [ext_resource type="Script" uid="uid://d0bvs2b3oa3q7" path="res://components/helpers/scatter.gd" id="4_v2d8i"]
@@ -167,6 +168,8 @@ transform = Transform3D(0.5408296, 0.8408128, -0.023173608, -0.08262672, 0.08052
 [node name="AnimationTree" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand" index="1"]
 root_node = NodePath("../Hand_Nails_low_L")
 tree_root = SubResource("AnimationNodeBlendTree_gfaum")
+
+[node name="FunctionTeleport" parent="XROrigin3D/LeftHand" index="1" unique_id=436698061 instance=ExtResource("3_tk2pl")]
 
 [node name="Skeleton3D" parent="XROrigin3D/RightHand/CollisionHandRight/RightHand/Hand_Nails_low_R/Armature" index="0"]
 bones/1/rotation = Quaternion(0.323537, 2.5658142e-05, 0.027220426, 0.9458239)
@@ -479,27 +482,7 @@ mesh = SubResource("BoxMesh_2oy5v")
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 1.5925875, -0.2569967, -1.5249197)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE27" type="MeshInstance3D" parent="World" index="38" unique_id=603564540]
-transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, -1.4401188, -0.2569967, -2.278813)
-mesh = SubResource("BoxMesh_2oy5v")
-
-[node name="TILE28" type="MeshInstance3D" parent="World" index="39" unique_id=2016798270]
-transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, -0.68622583, -0.2569967, -2.278813)
-mesh = SubResource("BoxMesh_2oy5v")
-
-[node name="TILE29" type="MeshInstance3D" parent="World" index="40" unique_id=817957617]
-transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 0.07623392, -0.2569967, -2.278813)
-mesh = SubResource("BoxMesh_2oy5v")
-
-[node name="TILE30" type="MeshInstance3D" parent="World" index="41" unique_id=624259121]
-transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 0.8215603, -0.2569967, -2.278813)
-mesh = SubResource("BoxMesh_2oy5v")
-
-[node name="TILE31" type="MeshInstance3D" parent="World" index="42" unique_id=1513502665]
-transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 1.5925875, -0.2569967, -2.278813)
-mesh = SubResource("BoxMesh_2oy5v")
-
-[node name="LIFT active" type="Node3D" parent="World" index="43" unique_id=1194887712]
+[node name="LIFT active" type="Node3D" parent="World" index="38" unique_id=1194887712]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5925875, -0.051164538, 1.4563844)
 
 [node name="AnimatableBody3D" type="AnimatableBody3D" parent="World/LIFT active" index="0" unique_id=1141590319]
