@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dcm35nplhutem"]
+
+[ext_resource type="PackedScene" uid="uid://bqn1atjrqu2t4" path="res://assets/3d/terrain/terrain.fbx" id="1_0ivf2"]
+[ext_resource type="Texture2D" uid="uid://csglqwlmheh3" path="res://assets/3d/terrain/terrain_BaseColor.png" id="2_ni7hh"]
+[ext_resource type="Texture2D" uid="uid://cn1fuenqu8x2u" path="res://assets/3d/terrain/terrain_terrain_Normal.png" id="4_hpxsq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cwi6w"]
+albedo_texture = ExtResource("2_ni7hh")
+normal_enabled = true
+normal_texture = ExtResource("4_hpxsq")
+
+[node name="terrain" unique_id=181911480 instance=ExtResource("1_0ivf2")]
+
+[node name="TerrainMesh" parent="." index="0" unique_id=1995676078]
+surface_material_override/0 = SubResource("StandardMaterial3D_cwi6w")

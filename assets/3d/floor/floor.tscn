@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://il3bgsl2o80d"]
+
+[ext_resource type="PackedScene" uid="uid://bs0rsowxfgwjr" path="res://assets/3d/floor/floor.fbx" id="1_o0pn4"]
+[ext_resource type="Texture2D" uid="uid://dme8kf06q5jxo" path="res://assets/3d/floor/floor_DefaultMaterial_BaseColor.png" id="2_iem3c"]
+[ext_resource type="Texture2D" uid="uid://dyr0285jic7hl" path="res://assets/3d/floor/floor_DefaultMaterial_Normal.png" id="3_m7bwm"]
+[ext_resource type="Texture2D" uid="uid://c1ikirdxkyeis" path="res://assets/3d/floor/floor_DefaultMaterial_Roughness.png" id="4_xegdg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vblly"]
+albedo_texture = ExtResource("2_iem3c")
+roughness_texture = ExtResource("4_xegdg")
+normal_enabled = true
+normal_texture = ExtResource("3_m7bwm")
+
+[node name="floor" unique_id=723459590 instance=ExtResource("1_o0pn4")]
+
+[node name="floor" parent="." index="0" unique_id=736180819]
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
