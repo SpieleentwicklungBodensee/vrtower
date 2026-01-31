@@ -137,13 +137,25 @@ nodes_to_disable = [NodePath("PLATFORM2")]
 [node name="Tower" parent="World" index="0" unique_id=286459706 instance=ExtResource("2_q1kjh")]
 
 [node name="Lift" parent="World" index="1" unique_id=1586812148 instance=ExtResource("3_q1kjh")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.015735865, -0.06771956, -1.658549)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.016, 0.01, -1.659)
 
 [node name="Button" parent="World" index="2" unique_id=211387759 instance=ExtResource("4_2ekmb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.96602046)
 
 [node name="PLATFORM2" parent="World" index="3" unique_id=295718761 instance=ExtResource("6_5jj4f")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.7971246, 0.54503584, -1.6426032)
+
+[node name="PLATFORM3" parent="World" index="4" unique_id=1496567954 instance=ExtResource("6_5jj4f")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.77346617, 4, -2.0457437)
+
+[node name="PLATFORM4" parent="World" index="5" unique_id=218138215 instance=ExtResource("6_5jj4f")]
+transform = Transform3D(0.1, 0, 0, 0, 0.2, 0, 0, 0, 2, -0.77346617, 4, -0.6212152)
+
+[node name="PLATFORM5" parent="World" index="6" unique_id=194775618 instance=ExtResource("6_5jj4f")]
+transform = Transform3D(0.049999997, 0, 1.7320508, 0, 0.19999997, 0, -0.086602546, 0, 0.9999999, 0.17401528, 4, 1.0129366)
+
+[node name="PLATFORM6" parent="World" index="7" unique_id=236379608 instance=ExtResource("6_5jj4f")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4916275, 4, 1.747978)
 
 [connection signal="pressed" from="World/Button" to="World" method="_on_button_pressed"]
 
