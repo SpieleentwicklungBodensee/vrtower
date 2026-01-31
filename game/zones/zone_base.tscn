@@ -96,6 +96,7 @@ height = 0.2
 
 [node name="XRCamera3D" parent="XROrigin3D" index="0"]
 near = 0.03
+far = 1000.0
 
 [node name="BackPocket" parent="XROrigin3D/XRCamera3D" index="0" unique_id=1811558876 instance=ExtResource("16_4oqtv")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0.2)
@@ -107,7 +108,7 @@ snap_require = "backpack"
 
 [node name="LeftHand" parent="XROrigin3D/LeftHand/CollisionHandLeft" index="1" unique_id=1317620870 instance=ExtResource("5_2k6vw")]
 
-[node name="Skeleton3D" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L/Armature" index="0"]
+[node name="Skeleton3D" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L/Armature" index="0" unique_id=1078218267]
 bones/1/rotation = Quaternion(0.323537, -2.5658142e-05, -0.027220426, 0.9458239)
 bones/2/rotation = Quaternion(-0.09044407, -0.04151748, -0.16629349, 0.98104167)
 bones/3/rotation = Quaternion(-0.04661986, 0.02097099, 0.010327632, 0.9986392)
@@ -172,7 +173,7 @@ unshaded = true
 
 [node name="RightHand" parent="XROrigin3D/RightHand/CollisionHandRight" index="1" unique_id=440995779 instance=ExtResource("13_dr7jm")]
 
-[node name="Skeleton3D" parent="XROrigin3D/RightHand/CollisionHandRight/RightHand/Hand_Nails_low_R/Armature" index="0"]
+[node name="Skeleton3D" parent="XROrigin3D/RightHand/CollisionHandRight/RightHand/Hand_Nails_low_R/Armature" index="0" unique_id=1320727510]
 bones/1/rotation = Quaternion(0.323537, 2.5658142e-05, 0.027220426, 0.9458239)
 bones/2/rotation = Quaternion(-0.09044407, 0.04151748, 0.16629349, 0.98104167)
 bones/3/rotation = Quaternion(-0.04661986, -0.020970985, -0.010327632, 0.9986392)
