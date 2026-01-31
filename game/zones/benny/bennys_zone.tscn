@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cvn48xcmsmkrb" path="res://game/zones/zone_base.tscn" id="1_8rfmm"]
 [ext_resource type="PackedScene" uid="uid://7v36gnoon8tg" path="res://game/objects/tower/tower.tscn" id="2_q1kjh"]
 [ext_resource type="PackedScene" uid="uid://c20dnny874i6s" path="res://game/objects/lift/lift.tscn" id="3_q1kjh"]
+[ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="4_2ekmb"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2ekmb"]
 animation = &"Grip"
@@ -92,6 +93,9 @@ bones/23/rotation = Quaternion(0.006871769, -0.0035727466, -0.21195254, 0.977249
 [node name="BoneAttachment3D" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L/Armature/Skeleton3D" index="1"]
 transform = Transform3D(0.5408296, 0.8408128, -0.023173608, -0.08262672, 0.08052427, 0.99332196, 0.83706397, -0.5353032, 0.11302349, 0.039901964, 0.040282845, -0.15009598)
 
+[node name="Poke" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L/Armature/Skeleton3D/BoneAttachment3D" index="0"]
+color = Color(0.93640345, 0.2079322, 0.3635508, 0.5019608)
+
 [node name="AnimationTree" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand" index="1"]
 root_node = NodePath("../Hand_Nails_low_L")
 tree_root = SubResource("AnimationNodeBlendTree_opx0g")
@@ -130,6 +134,9 @@ tree_root = SubResource("AnimationNodeBlendTree_v2t6v")
 
 [node name="Lift" parent="World" index="1" unique_id=1586812148 instance=ExtResource("3_q1kjh")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.015735865, -0.06771956, -1.658549)
+
+[node name="Button" parent="World" index="2" unique_id=211387759 instance=ExtResource("4_2ekmb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.96602046)
 
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand"]
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L"]

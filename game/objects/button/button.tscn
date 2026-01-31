@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cgn412bnwlaug"]
+
+[ext_resource type="Script" uid="uid://wypslr5rp8ft" path="res://game/objects/button/button.gd" id="1_xpeud"]
+[ext_resource type="Script" uid="uid://cevslvuww1gda" path="res://game/objects/button/button_collision.gd" id="2_01j74"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_q1kjh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q1kjh"]
+albedo_color = Color(0.5231209, 0.5231201, 0.5231203, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2ekmb"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_2ekmb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ekmb"]
+albedo_color = Color(0.8341213, 2.3487806e-05, 0.08065351, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_us7dp"]
+radius = 0.50535613
+
+[node name="Button" type="Node3D" unique_id=211387759]
+script = ExtResource("1_xpeud")
+cooldown = 0.3
+press_depth = 0.015
+press_time = 0.3
+
+[node name="Body" type="MeshInstance3D" parent="." unique_id=462795281]
+transform = Transform3D(0.114, 0, 0, 0, 1.2, 0, 0, 0, 0.114, -0.003, 0.6, 0)
+mesh = SubResource("BoxMesh_q1kjh")
+surface_material_override/0 = SubResource("StandardMaterial3D_q1kjh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Body" unique_id=1851432037]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body/StaticBody3D" unique_id=258714505]
+shape = SubResource("BoxShape3D_2ekmb")
+
+[node name="RedButton" type="MeshInstance3D" parent="." unique_id=1835843064]
+transform = Transform3D(0.09119998, 0, 0, 0, 0.09142857, 0, 0, 0, 0.09119998, 0, 1.1875066, 0)
+mesh = SubResource("SphereMesh_2ekmb")
+surface_material_override/0 = SubResource("StandardMaterial3D_2ekmb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RedButton" unique_id=4489263]
+collision_layer = 4194304
+collision_mask = 4194304
+script = ExtResource("2_01j74")
+button_path = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RedButton/StaticBody3D" unique_id=513849946]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("SphereShape3D_us7dp")
