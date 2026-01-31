@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c1ikirdxkyeis" path="res://assets/3d/floor/floor_DefaultMaterial_Roughness.png" id="4_xegdg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vblly"]
+albedo_color = Color(1, 1, 0.9411765, 1)
 albedo_texture = ExtResource("2_iem3c")
 roughness_texture = ExtResource("4_xegdg")
 normal_enabled = true

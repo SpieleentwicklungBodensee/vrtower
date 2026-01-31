@@ -1,6 +1,8 @@
 [gd_resource type="Environment" format=3 uid="uid://er867l7dl10j"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qmfyt"]
+sky_horizon_color = Color(0.94577736, 0.9473018, 0.950347, 1)
+ground_horizon_color = Color(0.97281903, 0.9735871, 0.97512037, 1)
 
 [sub_resource type="Sky" id="1"]
 sky_material = SubResource("ProceduralSkyMaterial_qmfyt")
@@ -12,11 +14,13 @@ sky_rotation = Vector3(0, 2.35619, 0)
 tonemap_mode = 1
 ssr_enabled = true
 ssil_enabled = true
+sdfgi_enabled = true
 fog_enabled = true
 fog_light_color = Color(0.7003869, 0.71398777, 0.63866216, 1)
-fog_density = 0.001
-fog_sky_affect = 0.5
+fog_sun_scatter = 0.5
+fog_density = 0.003
+fog_sky_affect = 0.75
 fog_height = -25.0
-fog_height_density = 0.03
+fog_height_density = 0.05
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.3696
+volumetric_fog_density = 0.5
