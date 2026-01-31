@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c02c0qrenyn3a"]
+
+[ext_resource type="PackedScene" uid="uid://biof2yjxhve0a" path="res://assets/3d/tower/pillar.fbx" id="1_feypb"]
+[ext_resource type="Texture2D" uid="uid://b6yy5ny4k153p" path="res://assets/3d/tower/pillar_BaseColor.png" id="2_u0m06"]
+[ext_resource type="Texture2D" uid="uid://wsgr0xqanwad" path="res://assets/3d/tower/pillar_Normal.png" id="3_gg0y5"]
+[ext_resource type="Texture2D" uid="uid://r7tr8j5sgc21" path="res://assets/3d/tower/pillar_Roughness.png" id="4_u0m06"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g75oi"]
+albedo_texture = ExtResource("2_u0m06")
+roughness_texture = ExtResource("4_u0m06")
+normal_enabled = true
+normal_texture = ExtResource("3_gg0y5")
+
+[node name="pillar" unique_id=387861795 instance=ExtResource("1_feypb")]
+
+[node name="pillar" parent="." index="0" unique_id=1424921961]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_g75oi")

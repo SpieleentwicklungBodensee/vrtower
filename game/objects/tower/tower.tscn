@@ -4,6 +4,7 @@
 [ext_resource type="Material" uid="uid://c7prktlpm7tmm" path="res://assets/prototype_materials/forest.tres" id="3_dao0i"]
 [ext_resource type="PackedScene" uid="uid://il3bgsl2o80d" path="res://assets/3d/floor/floor.tscn" id="3_p1cfh"]
 [ext_resource type="PackedScene" uid="uid://dcm35nplhutem" path="res://assets/3d/terrain/terrain.tscn" id="4_dao0i"]
+[ext_resource type="PackedScene" uid="uid://c02c0qrenyn3a" path="res://assets/3d/tower/pillar.tscn" id="5_dao0i"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bcneb"]
 size = Vector3(20, 1, 20)
@@ -47,7 +48,7 @@ skeleton = NodePath("../../Level1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Boundary/Boundary1" unique_id=88693673]
-transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 0, 13.682632, 7.854276)
+transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 0, 13.682632, 7.5512195)
 mesh = SubResource("QuadMesh_m8rv6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Boundary/Boundary1" unique_id=1952339272]
@@ -58,7 +59,7 @@ shape = SubResource("BoxShape3D_olapf")
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 2, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Boundary/Boundary2" unique_id=83825078]
-transform = Transform3D(1, 0, 0, 0, 8, 0, 0, 0, 1, 3.3103413e-07, 0, 8.073176)
+transform = Transform3D(1, 0, 0, 0, 8, 0, 0, 0, 1, 3.163179e-07, 0, 7.7365084)
 mesh = SubResource("QuadMesh_m8rv6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Boundary/Boundary2" unique_id=726296830]
@@ -69,7 +70,7 @@ shape = SubResource("BoxShape3D_olapf")
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, 10)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Boundary/Boundary3" unique_id=1910328043]
-transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 6.490494e-07, 10.663359, 7.924258)
+transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 6.1915017e-07, 10.663359, 7.5822506)
 mesh = SubResource("QuadMesh_m8rv6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Boundary/Boundary3" unique_id=982354856]
@@ -80,11 +81,11 @@ shape = SubResource("BoxShape3D_olapf")
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Boundary/Boundary4" unique_id=1409724092]
-transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 1.0156373e-06, -0.03389597, 8.245033)
+transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 9.658664e-07, -0.03389597, 7.8654914)
 mesh = SubResource("QuadMesh_m8rv6")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Boundary/Boundary4" unique_id=1862627601]
-transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 1.0156373e-06, 5.364523, 8.245033)
+transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 9.658664e-07, 5.364523, 7.8654914)
 mesh = SubResource("QuadMesh_m8rv6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Boundary/Boundary4" unique_id=1798630226]
@@ -102,3 +103,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -242.64151, 2.7501993, -168.3
 mesh = SubResource("BoxMesh_rtrpu")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_bcneb")
+
+[node name="pillar" parent="." unique_id=387861795 instance=ExtResource("5_dao0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.872639, 3.499877e-08, -2.2338524)
+
+[node name="pillar2" parent="." unique_id=954366279 instance=ExtResource("5_dao0i")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.0325909, 3.499877e-08, -2.2338524)
+
+[node name="pillar3" parent="." unique_id=108795446 instance=ExtResource("5_dao0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.872639, 3.499877e-08, 2.188403)
+
+[node name="pillar4" parent="." unique_id=1454507076 instance=ExtResource("5_dao0i")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.0325909, 3.499877e-08, 2.188403)
