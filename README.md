@@ -69,4 +69,3 @@ Common areas to find assets are:
 # More Information
 
 Information on the Godot XR Tools can be found on [the website](https://godotvr.github.io/godot-xr-tools/).
-

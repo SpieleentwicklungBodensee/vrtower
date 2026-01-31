@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PersistentZoneInfo" format=3 uid="uid://to5lown6orfd"]
+
+[ext_resource type="Script" uid="uid://diipcou46cwqh" path="res://components/persistent/persistent_zone_info.gd" id="1_ebey5"]
+
+[resource]
+script = ExtResource("1_ebey5")
+zone_id = "tower_zone"
+instance_scene = "uid://cjat5u6nsihgw"
