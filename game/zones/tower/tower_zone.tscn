@@ -145,7 +145,7 @@ tree_root = SubResource("AnimationNodeBlendTree_gy752")
 [node name="Level1" type="Node3D" parent="World" index="1" unique_id=17079522]
 
 [node name="Lift" parent="World/Level1" index="0" unique_id=1586812148 instance=ExtResource("7_kpet1")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5864666, -0.058189064, 1.6226053)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.586, -0.094, 1.623)
 
 [node name="Level2" type="Node3D" parent="World" index="2" unique_id=133870948]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
@@ -160,7 +160,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, -0.76539177)
 
 [node name="Lift" parent="World/Level2" index="3" unique_id=1988907782 instance=ExtResource("7_kpet1")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4750197, -0.058189154, -1.529619)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.475, -0.1, -1.53)
 
 [node name="Level3Test" type="Node3D" parent="World" index="3" unique_id=2067011960]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 8, 0)
@@ -175,7 +175,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, -0.76539177)
 
 [node name="Lift" parent="World/Level3Test" index="3" unique_id=870124601 instance=ExtResource("7_kpet1")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4750197, -0.058189154, -1.529619)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.475, -0.1, -1.53)
 
 [node name="Level3Test2" type="Node3D" parent="World" index="4" unique_id=62137424]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 12, 0)
@@ -190,7 +190,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, -0.76539177)
 
 [node name="Lift" parent="World/Level3Test2" index="3" unique_id=63470958 instance=ExtResource("7_kpet1")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4750197, -0.058189154, -1.529619)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.475, -0.1, -1.53)
 
 [node name="Level3Test4" type="Node3D" parent="World" index="5" unique_id=10924569]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 16, 0)
@@ -205,7 +205,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, -0.76539177)
 
 [node name="Lift" parent="World/Level3Test4" index="3" unique_id=1157987576 instance=ExtResource("7_kpet1")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4750197, -0.058189154, -1.529619)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.475, -0.1, -1.53)
 
 [node name="Level3Test5" type="Node3D" parent="World" index="6" unique_id=1429111732 node_paths=PackedStringArray("nodes_to_disable")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
