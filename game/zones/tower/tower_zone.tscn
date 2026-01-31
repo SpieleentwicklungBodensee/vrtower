@@ -3,9 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cvn48xcmsmkrb" path="res://game/zones/zone_base.tscn" id="1_6vayy"]
 [ext_resource type="Resource" uid="uid://to5lown6orfd" path="res://game/zones/tower/tower_zone_info.tres" id="2_hx1qu"]
 [ext_resource type="PackedScene" uid="uid://fiul51tsyoop" path="res://addons/godot-xr-tools/functions/function_teleport.tscn" id="3_mu5n8"]
-[ext_resource type="Environment" uid="uid://er867l7dl10j" path="res://default_env.tres" id="4_4hlas"]
-[ext_resource type="Material" uid="uid://csepeix2yvih" path="res://assets/prototype_materials/grass.tres" id="5_egfvo"]
-[ext_resource type="Material" uid="uid://c7prktlpm7tmm" path="res://assets/prototype_materials/forest.tres" id="6_afr6q"]
+[ext_resource type="PackedScene" uid="uid://7v36gnoon8tg" path="res://game/objects/tower/tower.tscn" id="4_x2qe8"]
 [ext_resource type="PackedScene" uid="uid://c20dnny874i6s" path="res://game/objects/lift/lift.tscn" id="7_kpet1"]
 [ext_resource type="PackedScene" uid="uid://c1cpyhc6u7oq0" path="res://game/objects/platforms/platform_rock.tscn" id="8_hx1qu"]
 
@@ -70,22 +68,6 @@ nodes/OpenHand/position = Vector2(-600, 100)
 nodes/Trigger/node = SubResource("AnimationNodeBlend2_vo6t5")
 nodes/Trigger/position = Vector2(-360, 40)
 node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1"]
-
-[sub_resource type="QuadMesh" id="QuadMesh_0144s"]
-material = ExtResource("5_egfvo")
-size = Vector2(20, 20)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ivc2m"]
-size = Vector3(20, 1, 20)
-
-[sub_resource type="QuadMesh" id="QuadMesh_mq77n"]
-material = ExtResource("6_afr6q")
-size = Vector2(20, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_cvifd"]
-size = Vector3(20, 4, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_tpuir"]
 
 [node name="OutsideZone" unique_id=932116103 instance=ExtResource("1_6vayy")]
 zone_info = ExtResource("2_hx1qu")
@@ -156,82 +138,14 @@ tree_root = SubResource("AnimationNodeBlendTree_gy752")
 
 [node name="World" type="Node3D" parent="." index="1" unique_id=700250048]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="World" index="0" unique_id=1569723550]
-environment = ExtResource("4_4hlas")
+[node name="Tower" parent="World" index="0" unique_id=286459706 instance=ExtResource("4_x2qe8")]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World" index="1" unique_id=1000080131]
-transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, 0.5, -0.5, 0, 8, 0)
-
-[node name="Ground" type="StaticBody3D" parent="World" index="2" unique_id=300829470]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Ground" index="0" unique_id=2113575792]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
-mesh = SubResource("QuadMesh_0144s")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Ground" index="1" unique_id=1917236152]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-shape = SubResource("BoxShape3D_ivc2m")
-
-[node name="Boundary" type="Node3D" parent="World" index="3" unique_id=1967205066]
-
-[node name="Boundary1" type="StaticBody3D" parent="World/Boundary" index="0" unique_id=172860431]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary/Boundary1" index="0" unique_id=264634264]
-transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 0, 13.682632, 7.854276)
-mesh = SubResource("QuadMesh_mq77n")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary/Boundary1" index="1" unique_id=1954348205]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.1937633)
-shape = SubResource("BoxShape3D_cvifd")
-
-[node name="Boundary2" type="StaticBody3D" parent="World/Boundary" index="1" unique_id=2012526787]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 2, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary/Boundary2" index="0" unique_id=1072779160]
-transform = Transform3D(1, 0, 0, 0, 8, 0, 0, 0, 1, 3.3103413e-07, 0, 8.073176)
-mesh = SubResource("QuadMesh_mq77n")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary/Boundary2" index="1" unique_id=2118519283]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0396949e-07, 0, 4.666277)
-shape = SubResource("BoxShape3D_cvifd")
-
-[node name="Boundary3" type="StaticBody3D" parent="World/Boundary" index="2" unique_id=1248125490]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, 10)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary/Boundary3" index="0" unique_id=580367845]
-transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 6.490494e-07, 10.663359, 7.924258)
-mesh = SubResource("QuadMesh_mq77n")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary/Boundary3" index="1" unique_id=44086602]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.282596e-07, 0, 4.898718)
-shape = SubResource("BoxShape3D_cvifd")
-
-[node name="Boundary4" type="StaticBody3D" parent="World/Boundary" index="3" unique_id=1773461332]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary/Boundary4" index="0" unique_id=301028941]
-transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 1.0156373e-06, -0.03389597, 8.245033)
-mesh = SubResource("QuadMesh_mq77n")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="World/Boundary/Boundary4" index="1" unique_id=659688242]
-transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 1.0156373e-06, 5.364523, 8.245033)
-mesh = SubResource("QuadMesh_mq77n")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary/Boundary4" index="2" unique_id=1274079994]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1156893e-07, 0, 5.426273)
-shape = SubResource("BoxShape3D_cvifd")
-
-[node name="Level1" type="Node3D" parent="World" index="4" unique_id=17079522]
+[node name="Level1" type="Node3D" parent="World" index="1" unique_id=17079522]
 
 [node name="Lift" parent="World/Level1" index="0" unique_id=1586812148 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5864666, -0.058189064, 1.6226053)
 
-[node name="StartPosition" type="MeshInstance3D" parent="World/Level1" index="1" unique_id=1170957657]
-transform = Transform3D(0.5, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
-mesh = SubResource("BoxMesh_tpuir")
-
-[node name="Level2" type="Node3D" parent="World" index="5" unique_id=133870948]
+[node name="Level2" type="Node3D" parent="World" index="2" unique_id=133870948]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 
 [node name="PLATFORM4" parent="World/Level2" index="0" unique_id=295718761 instance=ExtResource("8_hx1qu")]
@@ -246,7 +160,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 [node name="Lift" parent="World/Level2" index="3" unique_id=1988907782 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4750197, -0.058189154, -1.529619)
 
-[node name="Level3Test" type="Node3D" parent="World" index="6" unique_id=2067011960]
+[node name="Level3Test" type="Node3D" parent="World" index="3" unique_id=2067011960]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 8, 0)
 
 [node name="PLATFORM4" parent="World/Level3Test" index="0" unique_id=1970538636 instance=ExtResource("8_hx1qu")]
@@ -261,7 +175,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 [node name="Lift" parent="World/Level3Test" index="3" unique_id=870124601 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4750197, -0.058189154, -1.529619)
 
-[node name="Level3Test2" type="Node3D" parent="World" index="7" unique_id=62137424]
+[node name="Level3Test2" type="Node3D" parent="World" index="4" unique_id=62137424]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 12, 0)
 
 [node name="PLATFORM4" parent="World/Level3Test2" index="0" unique_id=690146897 instance=ExtResource("8_hx1qu")]
@@ -276,7 +190,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 [node name="Lift" parent="World/Level3Test2" index="3" unique_id=63470958 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4750197, -0.058189154, -1.529619)
 
-[node name="Level3Test4" type="Node3D" parent="World" index="8" unique_id=10924569]
+[node name="Level3Test4" type="Node3D" parent="World" index="5" unique_id=10924569]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 16, 0)
 
 [node name="PLATFORM4" parent="World/Level3Test4" index="0" unique_id=1411732739 instance=ExtResource("8_hx1qu")]
