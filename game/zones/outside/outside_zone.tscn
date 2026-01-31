@@ -110,6 +110,9 @@ points = PackedVector3Array(-1.7634, 0, -2.42705, -1.24728, -1.41425, -1.71626, 
 
 [sub_resource type="BoxMesh" id="BoxMesh_2oy5v"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qimua"]
+albedo_color = Color(1, 1, 0.40392157, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2oy5v"]
 albedo_color = Color(1, 1, 0.58431375, 1)
 
@@ -210,7 +213,7 @@ shape = SubResource("BoxShape3D_ivc2m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary1" index="0" unique_id=264634264]
-transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 0, 14.673155, 7.854276)
+transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 0, 13.682632, 7.854276)
 mesh = SubResource("QuadMesh_mq77n")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary1" index="1" unique_id=1954348205]
@@ -243,10 +246,14 @@ shape = SubResource("BoxShape3D_cvifd")
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary4" index="0" unique_id=301028941]
-transform = Transform3D(0.3, 0, 0, 0, 8, 0, 0, 0, 1, 1.0156373e-06, 11.893078, 8.245033)
+transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 1.0156373e-06, -0.03389597, 8.245033)
 mesh = SubResource("QuadMesh_mq77n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary4" index="1" unique_id=1274079994]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="World/Boundary4" index="1" unique_id=659688242]
+transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 1.0156373e-06, 5.364523, 8.245033)
+mesh = SubResource("QuadMesh_mq77n")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary4" index="2" unique_id=1274079994]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1156893e-07, 0, 5.426273)
 shape = SubResource("BoxShape3D_cvifd")
 
@@ -277,43 +284,39 @@ mesh = SubResource("SphereMesh_6ysum")
 transform = Transform3D(0.09562771, 0.006003242, -0.028623173, -0.0083075855, 0.09941484, -0.006904334, 0.028041273, 0.00898036, 0.09556689, 2.9112191, 2.9220123, -7.2458525)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="World/Stone1" index="4" unique_id=1815007091]
-transform = Transform3D(0.09562769, 0.006003242, -0.02862316, -0.00830758, 0.09941484, -0.0069043357, 0.028041279, 0.00898036, 0.095566876, -0.43903393, 2.2152424, -8.166059)
-mesh = SubResource("SphereMesh_6ysum")
-
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="World/Stone1" index="5" unique_id=988257163]
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="World/Stone1" index="4" unique_id=988257163]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623156, -0.008307574, 0.09941484, -0.0069043394, 0.028041288, 0.00898036, 0.09556686, 0.1531471, 3.4322882, -12.327689)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D7" type="MeshInstance3D" parent="World/Stone1" index="6" unique_id=536919251]
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="World/Stone1" index="5" unique_id=536919251]
 transform = Transform3D(0.09562769, 0.006003242, -0.028623158, -0.008307576, 0.09941484, -0.0069043394, 0.028041283, 0.00898036, 0.09556687, -19.998917, 1.180413, -25.779552)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D8" type="MeshInstance3D" parent="World/Stone1" index="7" unique_id=332681689]
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="World/Stone1" index="6" unique_id=332681689]
 transform = Transform3D(0.09562768, 0.006003242, -0.02862315, -0.008307573, 0.09941484, -0.0069043394, 0.02804129, 0.00898036, 0.095566854, -1.3601102, 1.3184897, -5.6376987)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D9" type="MeshInstance3D" parent="World/Stone1" index="8" unique_id=1903514498]
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="World/Stone1" index="7" unique_id=1903514498]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623141, -0.008307573, 0.09941484, -0.0069043394, 0.02804129, 0.00898036, 0.09556685, -0.7187108, 1.6986806, -6.431142)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D10" type="MeshInstance3D" parent="World/Stone1" index="9" unique_id=610770157]
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="World/Stone1" index="8" unique_id=610770157]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623134, -0.008307573, 0.09941484, -0.0069043376, 0.02804129, 0.00898036, 0.09556684, -0.022703648, 2.1112404, -7.2921376)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D11" type="MeshInstance3D" parent="World/Stone1" index="10" unique_id=286874439]
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="World/Stone1" index="9" unique_id=286874439]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623134, -0.008307573, 0.09941484, -0.0069043376, 0.02804129, 0.00898036, 0.095566824, 3.5829334, 4.2484894, -11.752495)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D12" type="MeshInstance3D" parent="World/Stone1" index="11" unique_id=310048618]
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="World/Stone1" index="10" unique_id=310048618]
 transform = Transform3D(0.09562768, 0.006003242, -0.02862313, -0.008307573, 0.09941484, -0.0069043394, 0.02804129, 0.00898036, 0.095566824, 3.2633076, 4.0590305, -11.3571005)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="MeshInstance3D13" type="MeshInstance3D" parent="World/Stone1" index="12" unique_id=2133289254]
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="World/Stone1" index="11" unique_id=2133289254]
 transform = Transform3D(0.09562768, 0.006003242, -0.028623126, -0.008307573, 0.09941484, -0.0069043413, 0.02804129, 0.00898036, 0.095566824, 2.9659836, 3.8827915, -10.989295)
 mesh = SubResource("SphereMesh_6ysum")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Stone1" index="13" unique_id=1844540036]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Stone1" index="12" unique_id=1844540036]
 transform = Transform3D(1, -1.42492e-07, 0, 3.63216e-08, 1, 0, 0, 1.49012e-08, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_f4wyk")
 
@@ -344,9 +347,10 @@ mesh = SubResource("BoxMesh_2oy5v")
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 0.8215603, -0.2569967, 1.4563844)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE6" type="MeshInstance3D" parent="World" index="14" unique_id=1127663076]
-transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 1.5925875, -0.2569967, 1.4563844)
+[node name="LIFT1" type="MeshInstance3D" parent="World" index="14" unique_id=1127663076]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5925875, -0.051164538, 1.4563844)
 mesh = SubResource("BoxMesh_2oy5v")
+surface_material_override/0 = SubResource("StandardMaterial3D_qimua")
 
 [node name="TILE7" type="MeshInstance3D" parent="World" index="15" unique_id=1964039319]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, -1.4401188, -0.2569967, 0.7110585)
@@ -413,43 +417,55 @@ mesh = SubResource("BoxMesh_2oy5v")
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 1.5925875, -0.2569967, -0.77959365)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE22" type="MeshInstance3D" parent="World" index="31" unique_id=1428083945]
+[node name="TILE33" type="MeshInstance3D" parent="World" index="31" unique_id=1306887968]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5925875, 4.0026484, 0.7110585)
+mesh = SubResource("BoxMesh_2oy5v")
+
+[node name="TILE34" type="MeshInstance3D" parent="World" index="32" unique_id=816618214]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5925875, 4.0026484, -0.04283434)
+mesh = SubResource("BoxMesh_2oy5v")
+
+[node name="TILE35" type="MeshInstance3D" parent="World" index="33" unique_id=11975488]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5925875, 4.0026484, -0.77959365)
+mesh = SubResource("BoxMesh_2oy5v")
+
+[node name="TILE22" type="MeshInstance3D" parent="World" index="34" unique_id=1428083945]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, -1.4401188, -0.2569967, -1.5249197)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE23" type="MeshInstance3D" parent="World" index="32" unique_id=1055597112]
+[node name="TILE23" type="MeshInstance3D" parent="World" index="35" unique_id=1055597112]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, -0.68622583, -0.2569967, -1.5249197)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE24" type="MeshInstance3D" parent="World" index="33" unique_id=1527871017]
+[node name="TILE24" type="MeshInstance3D" parent="World" index="36" unique_id=1527871017]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 0.07623392, -0.2569967, -1.5249197)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE25" type="MeshInstance3D" parent="World" index="34" unique_id=1431391345]
+[node name="TILE25" type="MeshInstance3D" parent="World" index="37" unique_id=1431391345]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 0.8215603, -0.2569967, -1.5249197)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE26" type="MeshInstance3D" parent="World" index="35" unique_id=933514248]
+[node name="TILE26" type="MeshInstance3D" parent="World" index="38" unique_id=933514248]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 1.5925875, -0.2569967, -1.5249197)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE27" type="MeshInstance3D" parent="World" index="36" unique_id=603564540]
+[node name="TILE27" type="MeshInstance3D" parent="World" index="39" unique_id=603564540]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, -1.4401188, -0.2569967, -2.278813)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE28" type="MeshInstance3D" parent="World" index="37" unique_id=2016798270]
+[node name="TILE28" type="MeshInstance3D" parent="World" index="40" unique_id=2016798270]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, -0.68622583, -0.2569967, -2.278813)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE29" type="MeshInstance3D" parent="World" index="38" unique_id=817957617]
+[node name="TILE29" type="MeshInstance3D" parent="World" index="41" unique_id=817957617]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 0.07623392, -0.2569967, -2.278813)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE30" type="MeshInstance3D" parent="World" index="39" unique_id=624259121]
+[node name="TILE30" type="MeshInstance3D" parent="World" index="42" unique_id=624259121]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 0.8215603, -0.2569967, -2.278813)
 mesh = SubResource("BoxMesh_2oy5v")
 
-[node name="TILE31" type="MeshInstance3D" parent="World" index="40" unique_id=1513502665]
+[node name="TILE31" type="MeshInstance3D" parent="World" index="43" unique_id=1513502665]
 transform = Transform3D(0.7, 0, 0, 0, 0.6, 0, 0, 0, 0.7, 1.5925875, -0.2569967, -2.278813)
 mesh = SubResource("BoxMesh_2oy5v")
 
