@@ -4,8 +4,10 @@
 [ext_resource type="Resource" uid="uid://to5lown6orfd" path="res://game/zones/tower/tower_zone_info.tres" id="2_hx1qu"]
 [ext_resource type="PackedScene" uid="uid://fiul51tsyoop" path="res://addons/godot-xr-tools/functions/function_teleport.tscn" id="3_mu5n8"]
 [ext_resource type="PackedScene" uid="uid://7v36gnoon8tg" path="res://game/objects/tower/tower.tscn" id="4_x2qe8"]
+[ext_resource type="Script" uid="uid://cixwcdgvt5utk" path="res://game/objects/button/disable_node_on_button_pressed.gd" id="7_hx1qu"]
 [ext_resource type="PackedScene" uid="uid://c20dnny874i6s" path="res://game/objects/lift/lift.tscn" id="7_kpet1"]
 [ext_resource type="PackedScene" uid="uid://c1cpyhc6u7oq0" path="res://game/objects/platforms/platform_rock.tscn" id="8_hx1qu"]
+[ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="8_mu5n8"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hx1qu"]
 animation = &"Grip"
@@ -204,6 +206,49 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 
 [node name="Lift" parent="World/Level3Test4" index="3" unique_id=1157987576 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4750197, -0.058189154, -1.529619)
+
+[node name="Level3Test5" type="Node3D" parent="World" index="6" unique_id=1429111732 node_paths=PackedStringArray("nodes_to_disable")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+script = ExtResource("7_hx1qu")
+nodes_to_disable = [NodePath("PLATFORM13"), NodePath("PLATFORM12")]
+
+[node name="PLATFORM4" parent="World/Level3Test5" index="0" unique_id=1657566561 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, 0)
+
+[node name="PLATFORM5" parent="World/Level3Test5" index="1" unique_id=850764938 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.284105, -0.10000038, 0.7484319)
+
+[node name="PLATFORM6" parent="World/Level3Test5" index="2" unique_id=1681820571 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.2031131, -0.10000038, -0.76539177)
+
+[node name="PLATFORM7" parent="World/Level3Test5" index="3" unique_id=892188370 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.5441667, -0.10000038, -1.2155187)
+
+[node name="PLATFORM8" parent="World/Level3Test5" index="4" unique_id=1221098441 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.783152, -0.10000038, -1.5567746)
+
+[node name="PLATFORM9" parent="World/Level3Test5" index="5" unique_id=20582561 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.0056911707, -0.10000038, -1.2633052)
+
+[node name="PLATFORM10" parent="World/Level3Test5" index="6" unique_id=591246359 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.8080549, -0.10000038, -1.5758628)
+
+[node name="PLATFORM11" parent="World/Level3Test5" index="7" unique_id=778936350 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.6631651, -0.10000038, -0.4178056)
+
+[node name="PLATFORM12" parent="World/Level3Test5" index="8" unique_id=1805026091 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.1787262, -0.10000038, 0.34416175)
+
+[node name="PLATFORM13" parent="World/Level3Test5" index="9" unique_id=1396886971 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.42276394, -0.11408043, 0.72081816)
+
+[node name="PLATFORM14" parent="World/Level3Test5" index="10" unique_id=2100145935 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.1, 0, 0, 0, 3, 0, 0, 0, 2, 0.14160478, 1.0178261, 1.4803982)
+
+[node name="Button" parent="World/Level3Test5" index="11" unique_id=211387759 instance=ExtResource("8_mu5n8")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.057997763, 1.6983261, 3.4236155)
+
+[connection signal="pressed" from="World/Level3Test5/Button" to="World/Level3Test5" method="_on_button_pressed"]
 
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand"]
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L"]
