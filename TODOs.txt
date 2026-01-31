@@ -2,17 +2,12 @@ VR Tower / Maya Tempel
 
 TODOs
 
-- Kalibrierung -> Reset zum Start
-- Level Elemente als wiederverwendbare Elemente
-	- Fallen / Gegner
-		- Plattformen die verschwinden und wieder auftauchen
-		- Sägeblätter
-		- Riese der seine Hand durch den Turm bewegt
-	- Buttons die was aktivieren
+- Fallen / Gegner
+	- Sägeblätter
+	- Riese der seine Hand durch den Turm bewegt
 - Leveldesign
 - Bei Tod runter fallen
 - Boden wird zu Lava wenn der Spieler ein Stock hoch fährt oder etwas aktiviert
-- Umgebung des Turms / Sicht aus dem Turm
 - Win Condition -> Maya Maske
 
 Definitionen
