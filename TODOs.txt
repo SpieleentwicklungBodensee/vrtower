@@ -3,7 +3,6 @@ VR Tower / Maya Tempel
 TODOs
 
 - Kalibrierung -> Reset zum Start
-- Plattformen dürfen Spieler nicht verschieben
 - Level Elemente als wiederverwendbare Elemente
 	- Fallen / Gegner
 		- Plattformen die verschwinden und wieder auftauchen
