@@ -11,7 +11,6 @@ sky = SubResource("1")
 sky_rotation = Vector3(0, 2.35619, 0)
 tonemap_mode = 1
 ssr_enabled = true
-ssao_enabled = true
 ssil_enabled = true
 fog_enabled = true
 fog_light_color = Color(0.7003869, 0.71398777, 0.63866216, 1)
