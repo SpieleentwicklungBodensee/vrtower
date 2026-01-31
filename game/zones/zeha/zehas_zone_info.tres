@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PersistentZoneInfo" format=3 uid="uid://cfjwdea3m7pek"]
+
+[ext_resource type="Script" uid="uid://diipcou46cwqh" path="res://components/persistent/persistent_zone_info.gd" id="1_dqd47"]
+
+[resource]
+script = ExtResource("1_dqd47")
+zone_id = "zehas_zone"
+instance_scene = "uid://b48lpf4amo0vy"
+metadata/_custom_type_script = "uid://diipcou46cwqh"

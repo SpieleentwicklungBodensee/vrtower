@@ -124,6 +124,8 @@ func load_world_state() -> bool:
 			zone_id = "tower_zone"
 		GameDifficulty.GAME_NORMAL:
 			zone_id = "bennys_zone"
+		GameDifficulty.GAME_HARD:
+			zone_id = "zehas_zone"
 		_:
 			zone_id = "tower_zone"
 	
