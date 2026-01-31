@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bops470mqdfc8"]
+
+[ext_resource type="PackedScene" uid="uid://bqhfyy37wxrap" path="res://assets/3d/tower/wall.fbx" id="1_ywcua"]
+[ext_resource type="Texture2D" uid="uid://b6346dlhuaqw5" path="res://assets/3d/tower/wall_BaseColor.png" id="2_hojlv"]
+[ext_resource type="Texture2D" uid="uid://soe6j3maxla2" path="res://assets/3d/tower/wall_Normal.png" id="3_cctsv"]
+[ext_resource type="Texture2D" uid="uid://hgyx57wrr755" path="res://assets/3d/tower/wall_Roughness.png" id="4_6rvp2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6bhkb"]
+albedo_texture = ExtResource("2_hojlv")
+roughness_texture = ExtResource("4_6rvp2")
+normal_enabled = true
+normal_texture = ExtResource("3_cctsv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ywcua"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="wall" unique_id=2108915738 instance=ExtResource("1_ywcua")]
+
+[node name="wall" parent="." index="0" unique_id=1414783332]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.04937935, -0.007744074, -0.039129257)
+surface_material_override/0 = SubResource("StandardMaterial3D_6bhkb")
+
+[node name="plane" parent="." index="1" unique_id=1188661894]
+surface_material_override/0 = SubResource("StandardMaterial3D_ywcua")
