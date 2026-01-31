@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://hgyx57wrr755" path="res://assets/3d/tower/wall_Roughness.png" id="4_6rvp2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6bhkb"]
-albedo_color = Color(0.9019608, 0.9019608, 0.92156863, 1)
 albedo_texture = ExtResource("2_hojlv")
 roughness_texture = ExtResource("4_6rvp2")
 normal_enabled = true
