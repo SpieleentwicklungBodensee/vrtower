@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://il3bgsl2o80d"]
+[gd_scene format=4 uid="uid://il3bgsl2o80d"]
 
 [ext_resource type="PackedScene" uid="uid://bs0rsowxfgwjr" path="res://assets/3d/floor/floor.fbx" id="1_o0pn4"]
 [ext_resource type="Texture2D" uid="uid://dme8kf06q5jxo" path="res://assets/3d/floor/floor_DefaultMaterial_BaseColor.png" id="2_iem3c"]
@@ -11,7 +11,249 @@ roughness_texture = ExtResource("4_xegdg")
 normal_enabled = true
 normal_texture = ExtResource("3_m7bwm")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ynf4"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_68ax4"]
+_surfaces = [{
+"aabb": AABB(-0.35, -0.35, 0, 0.7, 0.7, 0.120000005),
+"format": 34359742465,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAQAEAAMABAABAAAAAgADAAUAAAAGAAQABQAHAAIAAgAHAAAABwAFAAYABgAAAAcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("MzOzPjMzsz6QwvU9MzOzPjMzs76QwvU9MzOzvjMzs76QwvU9MzOzvjMzs74AAAAAMzOzPjMzs74AAAAAMzOzvjMzsz4AAAAAMzOzPjMzsz4AAAAAMzOzvjMzsz6QwvU9")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2frth"]
+resource_name = "floor"
+_surfaces = [{
+"aabb": AABB(-0.35, -0.35, 0, 0.7, 0.7, 0.120000005),
+"attribute_data": PackedByteArray("I5R7P3BNHD4jlHs/EZ5aP9sSkD4Rnlo/2xKQPnBNHD4YxBI+ALXJO7Lwhj4Atck7svCGPh4eNT8bxBI+Hh41Pzwzez9A6Cs8PDN7P9TbBT4NUY8+1NsFPg1Rjz5A6Cs8CtviOwC94zsiNAI+AL3jOyQ0Aj4yUjU/WtviOzJSNT+6Fns/IvZeP7oWez90vX0/CRiPPnS9fT8JGI8+IvZePw=="),
+"format": 34359742487,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAA"),
+"material": SubResource("StandardMaterial3D_7ynf4"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("MzOzPjMzsz6QwvU9MzOzPjMzs76QwvU9MzOzvjMzs76QwvU9MzOzvjMzsz6QwvU9MzOzPjMzs76QwvU9MzOzPjMzs74AAAAAMzOzvjMzs74AAAAAMzOzvjMzs76QwvU9MzOzPjMzsz6QwvU9MzOzPjMzsz4AAAAAMzOzPjMzs74AAAAAMzOzPjMzs76QwvU9MzOzvjMzsz6QwvU9MzOzvjMzsz4AAAAAMzOzPjMzsz4AAAAAMzOzPjMzsz6QwvU9MzOzvjMzs76QwvU9MzOzvjMzs74AAAAAMzOzvjMzsz4AAAAAMzOzvjMzsz6QwvU9/3//f////7//f/9/////v/9//3////+//3//f////7//fwAA//////9/AAD//////38AAP//////fwAA/////////3//f///////f/9///////9//3///////3//f////3//////////f/////////9//////////3////////8AAP9//38AgAAA/3//fwCAAAD/f/9/AIAAAP9//38AgA==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_68ax4")
+
 [node name="floor" unique_id=723459590 instance=ExtResource("1_o0pn4")]
 
 [node name="floor" parent="." index="0" unique_id=736180819]
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor10" type="MeshInstance3D" parent="." index="1" unique_id=683615529]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, 0, 0, -0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor26" type="MeshInstance3D" parent="." index="2" unique_id=1674887576]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, 0, 0, 2.1)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor12" type="MeshInstance3D" parent="." index="3" unique_id=463049513]
+transform = Transform3D(1.1924881e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, -1.1924881e-08, -5.2125306e-16, 0.7, 0, -0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor11" type="MeshInstance3D" parent="." index="4" unique_id=1916534809]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, -0.7, 0, -0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor7" type="MeshInstance3D" parent="." index="5" unique_id=975299936]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor4" type="MeshInstance3D" parent="." index="6" unique_id=1458734061]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 0, 0, 0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor3" type="MeshInstance3D" parent="." index="7" unique_id=529432306]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, -0.7, 0, 0)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor2" type="MeshInstance3D" parent="." index="8" unique_id=442259440]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 0.7, 0, 0)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor5" type="MeshInstance3D" parent="." index="9" unique_id=1793946110]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 0, -4.371139e-08, 1, 8.742278e-08, 1, 4.371139e-08, 0.7, 0, 0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor8" type="MeshInstance3D" parent="." index="10" unique_id=1423341906]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 0, -4.371139e-08, 1, 8.742278e-08, 1, 4.371139e-08, -0.7, 0, 0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor9" type="MeshInstance3D" parent="." index="11" unique_id=1510818925]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, -0.7, 0, 1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor6" type="MeshInstance3D" parent="." index="12" unique_id=629499183]
+transform = Transform3D(1.1924881e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, -1.1924881e-08, -5.2125306e-16, 0.7, 0, 1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor13" type="MeshInstance3D" parent="." index="13" unique_id=1825191754]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, -1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor31" type="MeshInstance3D" parent="." index="14" unique_id=1042017463]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2.1, 0, 0)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor32" type="MeshInstance3D" parent="." index="15" unique_id=510869119]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, 2.1, 0, -0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor33" type="MeshInstance3D" parent="." index="16" unique_id=417721752]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, 2.1, 0, 2.1)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor34" type="MeshInstance3D" parent="." index="17" unique_id=1222153151]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2.1, 0, 1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor35" type="MeshInstance3D" parent="." index="18" unique_id=1773560512]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 2.1, 0, 0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor36" type="MeshInstance3D" parent="." index="19" unique_id=1458419300]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2.1, 0, -1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor14" type="MeshInstance3D" parent="." index="20" unique_id=1999287466]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, -0.7, 0, -1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor21" type="MeshInstance3D" parent="." index="21" unique_id=98346380]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 1.4, 0, -0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor30" type="MeshInstance3D" parent="." index="22" unique_id=851446189]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 1.4, 0, 2.1)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor22" type="MeshInstance3D" parent="." index="23" unique_id=260440839]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, 1.4, 0, 0)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor23" type="MeshInstance3D" parent="." index="24" unique_id=1834936165]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 0, -4.371139e-08, 1, 8.742278e-08, 1, 4.371139e-08, 1.4, 0, 0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor24" type="MeshInstance3D" parent="." index="25" unique_id=2113610505]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 1.4, 0, 1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor25" type="MeshInstance3D" parent="." index="26" unique_id=1764164349]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 1.4, 0, -1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor15" type="MeshInstance3D" parent="." index="27" unique_id=1588527400]
+transform = Transform3D(1.1924881e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, -1.1924881e-08, -5.2125306e-16, 0.7, 0, -1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor16" type="MeshInstance3D" parent="." index="28" unique_id=411897759]
+transform = Transform3D(1.1924881e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, -1.1924881e-08, -5.2125306e-16, -1.4, 0, -0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor17" type="MeshInstance3D" parent="." index="29" unique_id=740970502]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, -1.4, 0, 0)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor18" type="MeshInstance3D" parent="." index="30" unique_id=1418956415]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 0, -4.371139e-08, 1, 8.742278e-08, 1, 4.371139e-08, -1.4, 0, 0.7)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor27" type="MeshInstance3D" parent="." index="31" unique_id=650515840]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 0, -4.371139e-08, 1, 8.742278e-08, 1, 4.371139e-08, 0.7, 0, 2.1)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor28" type="MeshInstance3D" parent="." index="32" unique_id=1144110162]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 0, -4.371139e-08, 1, 8.742278e-08, 1, 4.371139e-08, -0.7, 0, 2.1)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor29" type="MeshInstance3D" parent="." index="33" unique_id=1795699861]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 0, -4.371139e-08, 1, 8.742278e-08, 1, 4.371139e-08, -1.4, 0, 2.1)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor19" type="MeshInstance3D" parent="." index="34" unique_id=566556907]
+transform = Transform3D(1.1924881e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, -1.1924881e-08, -5.2125306e-16, -1.4, 0, 1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_vblly")
+
+[node name="floor20" type="MeshInstance3D" parent="." index="35" unique_id=286416031]
+transform = Transform3D(1.1924881e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, -1.1924881e-08, -5.2125306e-16, -1.4, 0, -1.4)
+mesh = SubResource("ArrayMesh_2frth")
+skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_vblly")

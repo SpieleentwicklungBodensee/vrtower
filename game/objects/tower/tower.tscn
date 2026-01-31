@@ -1,12 +1,9 @@
 [gd_scene format=3 uid="uid://7v36gnoon8tg"]
 
 [ext_resource type="Environment" uid="uid://er867l7dl10j" path="res://default_env.tres" id="1_nxy1b"]
-[ext_resource type="Material" uid="uid://csepeix2yvih" path="res://assets/prototype_materials/grass.tres" id="2_p1cfh"]
 [ext_resource type="Material" uid="uid://c7prktlpm7tmm" path="res://assets/prototype_materials/forest.tres" id="3_dao0i"]
-
-[sub_resource type="QuadMesh" id="QuadMesh_rtrpu"]
-material = ExtResource("2_p1cfh")
-size = Vector2(20, 20)
+[ext_resource type="PackedScene" uid="uid://il3bgsl2o80d" path="res://assets/3d/floor/floor.tscn" id="3_p1cfh"]
+[ext_resource type="PackedScene" uid="uid://dcm35nplhutem" path="res://assets/3d/terrain/terrain.tscn" id="4_dao0i"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bcneb"]
 size = Vector3(20, 1, 20)
@@ -20,6 +17,11 @@ size = Vector2(20, 4)
 [sub_resource type="BoxShape3D" id="BoxShape3D_olapf"]
 size = Vector3(20, 4, 1)
 
+[sub_resource type="BoxMesh" id="BoxMesh_rtrpu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bcneb"]
+albedo_color = Color(1, 0, 0, 1)
+
 [node name="Tower" type="Node3D" unique_id=286459706]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1412797747]
@@ -29,10 +31,6 @@ environment = ExtResource("1_nxy1b")
 transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, 0.5, -0.5, 0, 8, 0)
 
 [node name="Ground" type="StaticBody3D" parent="." unique_id=119427050]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=94033102]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
-mesh = SubResource("QuadMesh_rtrpu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1454346115]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -92,3 +90,15 @@ mesh = SubResource("QuadMesh_m8rv6")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Boundary/Boundary4" unique_id=1798630226]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1156893e-07, 0, 5.426273)
 shape = SubResource("BoxShape3D_olapf")
+
+[node name="floor" parent="." unique_id=723459590 instance=ExtResource("3_p1cfh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.054357767, -0.11421013, -0.39313543)
+
+[node name="terrain" parent="." unique_id=181911480 instance=ExtResource("4_dao0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 242.67877, -3.4189186, 168.34712)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="terrain" unique_id=1167684410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -242.64151, 2.7501993, -168.36847)
+mesh = SubResource("BoxMesh_rtrpu")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_bcneb")
