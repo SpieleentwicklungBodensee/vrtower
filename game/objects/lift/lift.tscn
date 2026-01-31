@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c20dnny874i6s"]
+
+[ext_resource type="Script" uid="uid://fm8uywr5mm0w" path="res://game/objects/lift/lift.gd" id="1_f5ai1"]
+[ext_resource type="Script" uid="uid://dq7deex5wfhjr" path="res://game/objects/lift/lift-mover.gd" id="2_yrjvs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2oy5v"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2oy5v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qimua"]
+albedo_color = Color(1, 1, 0.40392157, 1)
+
+[node name="Lift" type="Node3D" unique_id=1586812148]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0, -0.1, 0)
+script = ExtResource("1_f5ai1")
+
+[node name="AnimatableBody3D" type="AnimatableBody3D" parent="." unique_id=893751234]
+script = ExtResource("2_yrjvs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D" unique_id=1192893126]
+shape = SubResource("BoxShape3D_2oy5v")
+
+[node name="LIFT-TILE" type="MeshInstance3D" parent="AnimatableBody3D" unique_id=213771217]
+transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_2oy5v")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_qimua")

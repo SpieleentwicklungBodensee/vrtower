@@ -478,7 +478,7 @@ shape = SubResource("CylinderShape3D_ns35b")
 
 [node name="ToOutside" parent="." index="3" instance=ExtResource("7_jpwgk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.6)
-zone_scene = "res://game/zones/outside/outside_zone.tscn"
+zone_scene = "res://game/zones/tower/tower_zone.tscn"
 spawn_node_name = "FromHouseInterior"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ToOutside" index="0"]

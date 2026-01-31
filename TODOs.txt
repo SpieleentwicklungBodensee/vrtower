@@ -1,0 +1,30 @@
+VR Tower / Maya Tempel
+
+TODOs
+
+- Kalibrierung -> Reset zum Start
+- Plattformen dürfen Spieler nicht verschieben
+- Level Elemente als wiederverwendbare Elemente
+	- Aufzüge
+	- Fallen / Gegner
+		- Plattformen die verschwinden und wieder auftauchen
+		- Sägeblätter
+		- Riese der seine Hand durch den Turm bewegt
+	- Buttons die was aktivieren
+- Leveldesign
+- Bei Tod runter fallen
+- Boden wird zu Lava wenn der Spieler ein Stock hoch fährt oder etwas aktiviert
+- Umgebung des Turms / Sicht aus dem Turm
+
+- Menü für mehrere Szenen / jeder seine eigene Scene
+- Main Szene aufräumen
+	- Unnötiges raus
+	- Objekt Gruppieren / wiederverwendbar gestallten
+
+- Win Condition -> Maya Maske
+
+
+Definitionen
+
+Raumgröße 5x5m
+Stockwerkshöhe -> 4 - 5 m
