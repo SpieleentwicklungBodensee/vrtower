@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://7oxobibx6y8q"]
+
+[ext_resource type="Script" uid="uid://dipodwe65krhc" path="res://game/start_scene/load_main_scene.gd" id="1_jmjm7"]
+[ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="2_ryjmr"]
+
+[node name="ToMainSceneButton" type="Node3D" unique_id=1022452082]
+
+[node name="LoadMainScene" type="Node" parent="." unique_id=1152900984]
+script = ExtResource("1_jmjm7")
+
+[node name="ButtonMainScene" parent="." unique_id=211387759 instance=ExtResource("2_ryjmr")]
+
+[node name="Label3D" type="Label3D" parent="." unique_id=289042378]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3885101, 0)
+pixel_size = 0.002
+text = "Main Menu"
+
+[connection signal="pressed" from="ButtonMainScene" to="LoadMainScene" method="_on_button_main_scene_pressed"]

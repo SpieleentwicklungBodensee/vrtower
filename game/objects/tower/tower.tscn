@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://il3bgsl2o80d" path="res://assets/3d/floor/floor.tscn" id="3_p1cfh"]
 [ext_resource type="PackedScene" uid="uid://dcm35nplhutem" path="res://assets/3d/terrain/terrain.tscn" id="4_dao0i"]
 [ext_resource type="PackedScene" uid="uid://c02c0qrenyn3a" path="res://assets/3d/tower/pillar.tscn" id="5_dao0i"]
+[ext_resource type="PackedScene" uid="uid://7oxobibx6y8q" path="res://game/objects/button/to_main_scene_button.tscn" id="6_rtrpu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bcneb"]
 size = Vector3(20, 1, 20)
@@ -115,3 +116,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.872639, 3.499877e-08, 2.18
 
 [node name="pillar4" parent="." unique_id=1454507076 instance=ExtResource("5_dao0i")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.0325909, 3.499877e-08, 2.188403)
+
+[node name="ToMainSceneButton" parent="." unique_id=1022452082 instance=ExtResource("6_rtrpu")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.6692312, 0, 0)
