@@ -1,6 +1,6 @@
 extends AnimatableBody3D
 
-@export var distance: float = 20.0
+@export var distance: float = 20.3
 @export var speed: float = 4.0
 
 # Called when the node enters the scene tree for the first time.
