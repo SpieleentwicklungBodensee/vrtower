@@ -29,6 +29,7 @@ enum GameDifficulty {
 @export var game_difficulty : GameDifficulty = GameDifficulty.GAME_NORMAL:
 	set = _set_game_difficulty
 
+var game_scene_id : String
 
 ## Current zone (when playing game)
 var current_zone : PersistentZone
@@ -117,7 +118,16 @@ func load_world_state() -> bool:
 		return false
 
 	# Get the zone ID
-	var zone_id = get_value("current_zone_id")
+	var zone_id : String
+	match game_difficulty:
+		GameDifficulty.GAME_EASY:
+			zone_id = "tower_zone"
+		GameDifficulty.GAME_NORMAL:
+			zone_id = "bennys_zone"
+		_:
+			zone_id = "tower_zone"
+	
+	#var zone_id = get_value("current_zone_id")
 	if not zone_id is String:
 		# Default to the starting zone
 		zone_id = starting_zone.zone_id

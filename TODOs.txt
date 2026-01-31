@@ -14,7 +14,6 @@ TODOs
 - Bei Tod runter fallen
 - Boden wird zu Lava wenn der Spieler ein Stock hoch fährt oder etwas aktiviert
 - Umgebung des Turms / Sicht aus dem Turm
-- Menü für mehrere Szenen / jeder seine eigene Scene
 - Win Condition -> Maya Maske
 
 Definitionen
