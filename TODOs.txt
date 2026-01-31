@@ -17,5 +17,6 @@ TODOs
 
 Definitionen
 
-Raumgröße 5x5m
+Raumgröße ca 4x4m
+Grid-Einteilung ca 0.75 x 0.75
 Stockwerkshöhe -> 4 - 5 m
