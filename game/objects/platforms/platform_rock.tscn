@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c1cpyhc6u7oq0"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_twjr1"]
+[ext_resource type="PackedScene" uid="uid://dc0s7oskduxro" path="res://assets/3d/tower/platform.tscn" id="1_lbqgx"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_2oy5v"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_twjr1"]
 
 [node name="PLATFORM2" type="Node3D" unique_id=295718761]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0, -0.1, 0)
@@ -13,7 +13,5 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0, -0.1, 0)
 transform = Transform3D(0.9999998, 0, 0, 0, 0.99999946, 0, 0, 0, 0.9999998, 0, 0, 0)
 shape = SubResource("BoxShape3D_twjr1")
 
-[node name="TILE35" type="MeshInstance3D" parent="StaticBody3D" unique_id=10747442]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999994, 0, 0, 0.014262367)
-mesh = SubResource("BoxMesh_2oy5v")
-skeleton = NodePath("../../../..")
+[node name="platform" parent="StaticBody3D" unique_id=343369866 instance=ExtResource("1_lbqgx")]
+transform = Transform3D(-6.244484e-08, 0, 1.4285715, 0, 4.999999, 0, -1.4285715, 0, -6.244484e-08, 0, 0.5, 0)

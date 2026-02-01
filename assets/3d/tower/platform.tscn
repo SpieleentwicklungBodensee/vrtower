@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dc0s7oskduxro"]
+
+[ext_resource type="PackedScene" uid="uid://bhum2d3s53b7l" path="res://assets/3d/tower/platform.fbx" id="1_33m8p"]
+[ext_resource type="Texture2D" uid="uid://b6bksv1ppfv3a" path="res://assets/3d/tower/platform_wood_BaseColor.png" id="2_dr05e"]
+[ext_resource type="Texture2D" uid="uid://dbossfu56muas" path="res://assets/3d/tower/platform_wood_Normal.png" id="3_vi5rf"]
+[ext_resource type="Texture2D" uid="uid://bsk8x2jm2dbpk" path="res://assets/3d/tower/platform_wood_Roughness.png" id="4_y7pl8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gfe1u"]
+albedo_texture = ExtResource("2_dr05e")
+roughness_texture = ExtResource("4_y7pl8")
+normal_enabled = true
+normal_texture = ExtResource("3_vi5rf")
+
+[node name="platform" unique_id=343369866 instance=ExtResource("1_33m8p")]
+
+[node name="platform" parent="." index="0" unique_id=1956007062]
+surface_material_override/0 = SubResource("StandardMaterial3D_gfe1u")
