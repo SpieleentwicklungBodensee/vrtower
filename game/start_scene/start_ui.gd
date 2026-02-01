@@ -2,6 +2,7 @@ extends CenterContainer
 
 @onready var save_list_node = $LoadGame/SaveList
 var save_list : Array
+var counter : float = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,6 +17,13 @@ func _ready():
 			save_list_node.add_item(entry)
 
 	$MainMenu/LoadGameBtn.disabled = save_list.size() == 0
+
+func _process(delta: float) -> void:
+	counter += delta
+	if int(counter) % 2 == 0:
+		$HeadWarning.show()
+	else:
+		$HeadWarning.hide()
 
 func _set_pane(p_no):
 	$MainMenu.visible = p_no == 1
