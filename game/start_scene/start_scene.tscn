@@ -81,7 +81,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_3ap0s")
 
 [node name="Wall1" type="StaticBody3D" parent="World" index="3" unique_id=1286427345]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -1.5001044)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -1.9915959)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Wall1" index="0" unique_id=1897259343]
 mesh = SubResource("QuadMesh_l0e1e")
@@ -91,7 +91,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
 shape = SubResource("BoxShape3D_w6gh2")
 
 [node name="Wall2" type="StaticBody3D" parent="World" index="4" unique_id=963135555]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.4966156, 2, 0)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.0053523, 2, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Wall2" index="0" unique_id=1030805968]
 mesh = SubResource("QuadMesh_l0e1e")
@@ -101,7 +101,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
 shape = SubResource("BoxShape3D_w6gh2")
 
 [node name="Wall3" type="StaticBody3D" parent="World" index="5" unique_id=1002674520]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, 1.4940562)
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, 2.0027928)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Wall3" index="0" unique_id=116656797]
 mesh = SubResource("QuadMesh_l0e1e")
@@ -111,7 +111,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
 shape = SubResource("BoxShape3D_w6gh2")
 
 [node name="Wall4" type="StaticBody3D" parent="World" index="6" unique_id=96206211]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -1.4951203, 2, 0)
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -1.9952343, 2, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Wall4" index="0" unique_id=907513076]
 mesh = SubResource("QuadMesh_l0e1e")
@@ -132,7 +132,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("BoxShape3D_3ap0s")
 
 [node name="Screen" parent="." index="2" unique_id=1639328665 instance=ExtResource("4_7pgy0")]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 1.4269037, -1.4497391)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 1.6853127, -1.9097838)
 update_mode = 2
 throttle_fps = 15.0
 unshaded = true
