@@ -5,7 +5,7 @@ var save_list : Array
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	_set_pane(1)
+	_set_pane(2)
 
 	# Get our list of save games
 	if PersistentWorld.instance:
