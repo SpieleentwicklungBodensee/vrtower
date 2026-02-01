@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bf478lc6ucmbh"]
+
+[ext_resource type="PackedScene" uid="uid://c1cpyhc6u7oq0" path="res://game/objects/platforms/platform_rock.tscn" id="1_52koi"]
+[ext_resource type="Script" uid="uid://i4in6lk7us78" path="res://game/zones/tower/levels/level_6.gd" id="1_q2xap"]
+[ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="2_q2xap"]
+[ext_resource type="PackedScene" uid="uid://c20dnny874i6s" path="res://game/objects/lift/lift.tscn" id="5_2qhlq"]
+
+[node name="Level6" type="Node3D" unique_id=236357872]
+script = ExtResource("1_q2xap")
+
+[node name="PLATFORM13" parent="." unique_id=295718761 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.42276394, -0.11408043, 0.72081816)
+
+[node name="Button" parent="." unique_id=211387759 instance=ExtResource("2_q2xap")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.24520041, 1.4361238, 3.1883023)
+
+[node name="Phase1" type="Node3D" parent="." unique_id=225946476]
+
+[node name="PLATFORM4" parent="Phase1" unique_id=469698903 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.10000038, 0)
+
+[node name="PLATFORM5" parent="Phase1" unique_id=1750901958 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.284105, -0.10000038, 0.7484319)
+
+[node name="PLATFORM6" parent="Phase1" unique_id=708905785 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.2031131, -0.10000038, -0.76539177)
+
+[node name="PLATFORM7" parent="Phase1" unique_id=398551856 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.5441667, -0.10000038, -1.2155187)
+
+[node name="PLATFORM8" parent="Phase1" unique_id=1109957786 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.783152, -0.10000038, -1.5567746)
+
+[node name="PLATFORM9" parent="Phase1" unique_id=2131411989 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.0056911707, -0.10000038, -1.2633052)
+
+[node name="PLATFORM10" parent="Phase1" unique_id=27362595 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.8080549, -0.10000038, -1.5758628)
+
+[node name="PLATFORM11" parent="Phase1" unique_id=686369168 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.6631651, -0.10000038, -0.4178056)
+
+[node name="PLATFORM12" parent="Phase1" unique_id=88457696 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.1787262, -0.10000038, 0.34416175)
+
+[node name="PLATFORM14" parent="Phase1" unique_id=1163706468 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.1, 0, 0, 0, 3, 0, 0, 0, 2, 0.14160478, 1.0178261, 1.4803982)
+
+[node name="Phase2" type="Node3D" parent="." unique_id=428955909]
+
+[node name="PLATFORM2" parent="Phase2" unique_id=1988280202 instance=ExtResource("1_52koi")]
+transform = Transform3D(0.6156615, 0, 0.07880107, 0, 0.2, 0, -0.7880107, 0, 0.06156615, 0.8016852, -0.10000026, -0.7368307)
+
+[node name="Lift" parent="Phase2" unique_id=1586812148 instance=ExtResource("5_2qhlq")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.371144, -0.10000038, -1.608453)
+
+[node name="PLATFORM3" parent="Phase2" unique_id=104790273 instance=ExtResource("1_52koi")]
+transform = Transform3D(-0.6184435, 0, 0.090850815, 0, 0.2, 0, -1.3445921, 0, -0.041786723, 0.8536281, -0.100000024, 0.40722954)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

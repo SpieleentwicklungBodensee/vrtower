@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://wyfaar6u1j8s"]
+
+[ext_resource type="Script" uid="uid://bjeu5iyxqw08c" path="res://game/zones/tower/levels/final_level.gd" id="1_4e1ho"]
+[ext_resource type="PackedScene" uid="uid://c1cpyhc6u7oq0" path="res://game/objects/platforms/platform_rock.tscn" id="1_n74es"]
+[ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="2_usvee"]
+
+[node name="FinalLevel" type="Node3D" unique_id=1859103912]
+script = ExtResource("1_4e1ho")
+
+[node name="PLATFORM3" parent="." unique_id=576257799 instance=ExtResource("1_n74es")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0, -0.1, -0.76221645)
+
+[node name="P2" parent="." unique_id=1718247591 instance=ExtResource("1_n74es")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0, -0.1, -1.548746)
+
+[node name="P1" parent="." unique_id=1829089770 instance=ExtResource("1_n74es")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.7777126, -0.1, -1.548746)
+
+[node name="Button" parent="." unique_id=211387759 instance=ExtResource("2_usvee")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.41901958)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

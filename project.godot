@@ -23,6 +23,7 @@ config/icon="res://icon.png"
 
 XRToolsUserSettings="*uid://bvvyeew8p7voc"
 GameState="*res://game/game_state.tscn"
+VrTowerNodeManager="*uid://b7ufvody2mmyx"
 
 [editor_plugins]
 

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://b05rm4klotnaw"]
+
+[ext_resource type="Script" uid="uid://buavoe5elpuy4" path="res://game/zones/tower/levels/level_7.gd" id="1_rdrdx"]
+[ext_resource type="PackedScene" uid="uid://c1cpyhc6u7oq0" path="res://game/objects/platforms/platform_rock.tscn" id="2_if85q"]
+[ext_resource type="PackedScene" uid="uid://b8an5yh3pn66o" path="res://game/objects/hiding_platform/hiding_platform.tscn" id="3_uh13k"]
+[ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="4_8hucd"]
+[ext_resource type="PackedScene" uid="uid://c20dnny874i6s" path="res://game/objects/lift/lift.tscn" id="5_aff7o"]
+
+[node name="Level7" type="Node3D" unique_id=921268320]
+script = ExtResource("1_rdrdx")
+
+[node name="HIDING_PLATFORM2" parent="." unique_id=554781301 instance=ExtResource("3_uh13k")]
+transform = Transform3D(0.52326214, 0, -0.096174136, 0, 0.2, 0, 1.8369259, 0, 0.027395925, -0.86317515, -0.10000038, -0.4037544)
+secondsOn = 5
+timeOffset = 1
+
+[node name="HIDING_PLATFORM3" parent="." unique_id=403551781 instance=ExtResource("3_uh13k")]
+transform = Transform3D(-1.4999206, 0, -0.0010297317, 0, 0.20000003, 0, 0.015445948, 0, -0.09999471, 0.18227726, -0.10000038, 0.62006867)
+secondsOn = 5
+
+[node name="PLATFORM4" parent="." unique_id=1140200840 instance=ExtResource("2_if85q")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.3509902, -0.10000038, 0.8111099)
+
+[node name="Button" parent="." unique_id=211387759 instance=ExtResource("4_8hucd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1371338, 0, 0.830034)
+
+[node name="Phase1" type="Node3D" parent="." unique_id=369959885]
+
+[node name="PLATFORM2" parent="Phase1" unique_id=69382148 instance=ExtResource("2_if85q")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.553812, -0.10000038, -1.8084534)
+
+[node name="HIDING_PLATFORM" parent="Phase1" unique_id=103855436 instance=ExtResource("3_uh13k")]
+transform = Transform3D(1.5, 0, 0, 0, 0.2, 0, 0, 0, 0.1, -0.64096177, -0.10000038, -1.5519726)
+
+[node name="PLATFORM3" parent="Phase1" unique_id=295718761 instance=ExtResource("2_if85q")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.5484947, -0.10000038, -1.1110064)
+
+[node name="Phase2" type="Node3D" parent="." unique_id=1771827960]
+
+[node name="Lift" parent="Phase2" unique_id=1586812148 instance=ExtResource("5_aff7o")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.1756234, -0.10000038, -1.8584042)
+speed = 2.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

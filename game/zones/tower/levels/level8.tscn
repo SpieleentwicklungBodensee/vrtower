@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dk6rphibcqmmp"]
+
+[ext_resource type="PackedScene" uid="uid://c1cpyhc6u7oq0" path="res://game/objects/platforms/platform_rock.tscn" id="1_g4abp"]
+[ext_resource type="PackedScene" uid="uid://b8an5yh3pn66o" path="res://game/objects/hiding_platform/hiding_platform.tscn" id="2_kgrp4"]
+[ext_resource type="PackedScene" uid="uid://c20dnny874i6s" path="res://game/objects/lift/lift.tscn" id="3_k47sx"]
+
+[node name="Level8" type="Node3D" unique_id=808957688]
+
+[node name="PLATFORM3" parent="." unique_id=295718761 instance=ExtResource("1_g4abp")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.205, 0, -1.111)
+
+[node name="HIDING_PLATFORM" parent="." unique_id=1999666626 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.44260037, -0.10000038, -1.6268265)
+timeOffset = 4
+
+[node name="HIDING_PLATFORM2" parent="." unique_id=1850047098 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.33305335, -0.10000038, -1.6300468)
+timeOffset = 3
+
+[node name="HIDING_PLATFORM3" parent="." unique_id=680862136 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.1281608, -0.10000038, -1.2459074)
+timeOffset = 2
+
+[node name="HIDING_PLATFORM4" parent="." unique_id=199766325 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.3221649, -0.10000038, -0.45492816)
+timeOffset = 1
+
+[node name="HIDING_PLATFORM5" parent="." unique_id=157883146 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.91741, -0.10000038, 0.33808386)
+secondsOn = 7
+secondsOff = 1
+
+[node name="HIDING_PLATFORM6" parent="." unique_id=1499895135 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.14674407, -0.10738182, -0.009213448)
+timeOffset = 4
+
+[node name="HIDING_PLATFORM7" parent="." unique_id=987615010 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.33, 0, 0, 0, 0.2, 0, 0, 0, 0.73, -0.031565428, -0.10000038, 0.7807525)
+timeOffset = 3
+
+[node name="HIDING_PLATFORM8" parent="." unique_id=592427344 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.1435706, -0.10000038, 1.6010947)
+timeOffset = 2
+
+[node name="Lift" parent="." unique_id=1586812148 instance=ExtResource("3_k47sx")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.3317969, -0.10000038, 1.4104599)
+
+[node name="HIDING_PLATFORM9" parent="." unique_id=1174570515 instance=ExtResource("2_kgrp4")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.3, -0.612224, -0.10000038, 1.6207544)
+timeOffset = 1
