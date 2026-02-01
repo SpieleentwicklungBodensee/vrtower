@@ -138,6 +138,8 @@ nodes_to_disable = [NodePath("PLATFORM2")]
 
 [node name="Lift" parent="World" index="1" unique_id=1586812148 instance=ExtResource("3_q1kjh")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.016, 0.01, -1.659)
+distance = 30.3
+speed = 14.0
 
 [node name="Button" parent="World" index="2" unique_id=211387759 instance=ExtResource("4_2ekmb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.96602046)
