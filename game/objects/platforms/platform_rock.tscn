@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c1cpyhc6u7oq0"]
 
-[ext_resource type="PackedScene" uid="uid://dc0s7oskduxro" path="res://assets/3d/tower/platform.tscn" id="1_lbqgx"]
+[ext_resource type="PackedScene" path="res://assets/3d/tower/platform.tscn" id="1_lbqgx"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_twjr1"]
 
