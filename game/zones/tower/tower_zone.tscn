@@ -9,66 +9,67 @@
 [ext_resource type="PackedScene" uid="uid://b8an5yh3pn66o" path="res://game/objects/hiding_platform/hiding_platform.tscn" id="7_mu5n8"]
 [ext_resource type="PackedScene" uid="uid://c1cpyhc6u7oq0" path="res://game/objects/platforms/platform_rock.tscn" id="8_hx1qu"]
 [ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="8_mu5n8"]
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mu5n8"]
-animation = &"Grip"
+[ext_resource type="Script" uid="uid://tohotbu4jnex" path="res://game/objects/button/enable_node_on_button_pressed.gd" id="10_4hlas"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4hlas"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_egfvo"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_egfvo"]
+animation = &"Grip"
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_afr6q"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Little_Distal_L", "Armature/Skeleton3D:Little_Intermediate_L", "Armature/Skeleton3D:Little_Metacarpal_L", "Armature/Skeleton3D:Little_Proximal_L", "Armature/Skeleton3D:Middle_Distal_L", "Armature/Skeleton3D:Middle_Intermediate_L", "Armature/Skeleton3D:Middle_Metacarpal_L", "Armature/Skeleton3D:Middle_Proximal_L", "Armature/Skeleton3D:Ring_Distal_L", "Armature/Skeleton3D:Ring_Intermediate_L", "Armature/Skeleton3D:Ring_Metacarpal_L", "Armature/Skeleton3D:Ring_Proximal_L", "Armature/Skeleton3D:Thumb_Distal_L", "Armature/Skeleton3D:Thumb_Metacarpal_L", "Armature/Skeleton3D:Thumb_Proximal_L", "Armature/Skeleton:Little_Distal_L", "Armature/Skeleton:Little_Intermediate_L", "Armature/Skeleton:Little_Proximal_L", "Armature/Skeleton:Middle_Distal_L", "Armature/Skeleton:Middle_Intermediate_L", "Armature/Skeleton:Middle_Proximal_L", "Armature/Skeleton:Ring_Distal_L", "Armature/Skeleton:Ring_Intermediate_L", "Armature/Skeleton:Ring_Proximal_L", "Armature/Skeleton:Thumb_Distal_L", "Armature/Skeleton:Thumb_Proximal_L"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_afr6q"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kpet1"]
 animation = &"Grip 5"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_kpet1"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_ork8h"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Index_Distal_L", "Armature/Skeleton3D:Index_Intermediate_L", "Armature/Skeleton3D:Index_Metacarpal_L", "Armature/Skeleton3D:Index_Proximal_L", "Armature/Skeleton:Index_Distal_L", "Armature/Skeleton:Index_Intermediate_L", "Armature/Skeleton:Index_Proximal_L"]
 
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_ork8h"]
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_51x75"]
 graph_offset = Vector2(-536, 11)
-nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_mu5n8")
+nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_4hlas")
 nodes/ClosedHand1/position = Vector2(-600, 300)
-nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_4hlas")
+nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_egfvo")
 nodes/ClosedHand2/position = Vector2(-360, 300)
-nodes/Grip/node = SubResource("AnimationNodeBlend2_egfvo")
+nodes/Grip/node = SubResource("AnimationNodeBlend2_afr6q")
 nodes/Grip/position = Vector2(0, 20)
-nodes/OpenHand/node = SubResource("AnimationNodeAnimation_afr6q")
+nodes/OpenHand/node = SubResource("AnimationNodeAnimation_kpet1")
 nodes/OpenHand/position = Vector2(-600, 100)
-nodes/Trigger/node = SubResource("AnimationNodeBlend2_kpet1")
+nodes/Trigger/node = SubResource("AnimationNodeBlend2_ork8h")
 nodes/Trigger/position = Vector2(-360, 20)
 node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1"]
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_51x75"]
-animation = &"Grip"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qtjxx"]
 animation = &"Grip"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_1dsgs"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1dsgs"]
+animation = &"Grip"
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_vo6t5"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Little_Distal_R", "Armature/Skeleton3D:Little_Intermediate_R", "Armature/Skeleton3D:Little_Metacarpal_R", "Armature/Skeleton3D:Little_Proximal_R", "Armature/Skeleton3D:Middle_Distal_R", "Armature/Skeleton3D:Middle_Intermediate_R", "Armature/Skeleton3D:Middle_Metacarpal_R", "Armature/Skeleton3D:Middle_Proximal_R", "Armature/Skeleton3D:Ring_Distal_R", "Armature/Skeleton3D:Ring_Intermediate_R", "Armature/Skeleton3D:Ring_Metacarpal_R", "Armature/Skeleton3D:Ring_Proximal_R", "Armature/Skeleton3D:Thumb_Distal_R", "Armature/Skeleton3D:Thumb_Metacarpal_R", "Armature/Skeleton3D:Thumb_Proximal_R", "Armature/Skeleton:Little_Distal_R", "Armature/Skeleton:Little_Intermediate_R", "Armature/Skeleton:Little_Proximal_R", "Armature/Skeleton:Middle_Distal_R", "Armature/Skeleton:Middle_Intermediate_R", "Armature/Skeleton:Middle_Proximal_R", "Armature/Skeleton:Ring_Distal_R", "Armature/Skeleton:Ring_Intermediate_R", "Armature/Skeleton:Ring_Proximal_R", "Armature/Skeleton:Thumb_Distal_R", "Armature/Skeleton:Thumb_Proximal_R"]
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vo6t5"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_gy752"]
 animation = &"Grip 5"
 
-[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_gy752"]
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_tpuir"]
 filter_enabled = true
 filters = ["Armature/Skeleton3D:Index_Distal_R", "Armature/Skeleton3D:Index_Intermediate_R", "Armature/Skeleton3D:Index_Metacarpal_R", "Armature/Skeleton3D:Index_Proximal_R", "Armature/Skeleton:Index_Distal_R", "Armature/Skeleton:Index_Intermediate_R", "Armature/Skeleton:Index_Proximal_R"]
 
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_tpuir"]
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_cmvtx"]
 graph_offset = Vector2(-552.664, 107.301)
-nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_51x75")
+nodes/ClosedHand1/node = SubResource("AnimationNodeAnimation_qtjxx")
 nodes/ClosedHand1/position = Vector2(-600, 300)
-nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_qtjxx")
+nodes/ClosedHand2/node = SubResource("AnimationNodeAnimation_1dsgs")
 nodes/ClosedHand2/position = Vector2(-360, 300)
-nodes/Grip/node = SubResource("AnimationNodeBlend2_1dsgs")
+nodes/Grip/node = SubResource("AnimationNodeBlend2_vo6t5")
 nodes/Grip/position = Vector2(0, 40)
-nodes/OpenHand/node = SubResource("AnimationNodeAnimation_vo6t5")
+nodes/OpenHand/node = SubResource("AnimationNodeAnimation_gy752")
 nodes/OpenHand/position = Vector2(-600, 100)
-nodes/Trigger/node = SubResource("AnimationNodeBlend2_gy752")
+nodes/Trigger/node = SubResource("AnimationNodeBlend2_tpuir")
 nodes/Trigger/position = Vector2(-360, 40)
 node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1"]
 
@@ -107,7 +108,7 @@ transform = Transform3D(0.5408296, 0.8408128, -0.023173608, -0.08262672, 0.08052
 
 [node name="AnimationTree" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand" index="1"]
 root_node = NodePath("../Hand_Nails_low_L")
-tree_root = SubResource("AnimationNodeBlendTree_ork8h")
+tree_root = SubResource("AnimationNodeBlendTree_51x75")
 
 [node name="FunctionTeleport" parent="XROrigin3D/LeftHand" index="1" unique_id=436698061 instance=ExtResource("3_mu5n8")]
 
@@ -137,7 +138,7 @@ transform = Transform3D(0.5408295, -0.8408129, 0.023173586, 0.08262676, 0.080524
 
 [node name="AnimationTree" parent="XROrigin3D/RightHand/CollisionHandRight/RightHand" index="1"]
 root_node = NodePath("../Hand_Nails_low_R")
-tree_root = SubResource("AnimationNodeBlendTree_tpuir")
+tree_root = SubResource("AnimationNodeBlendTree_cmvtx")
 
 [node name="World" type="Node3D" parent="." index="1" unique_id=700250048]
 
@@ -163,149 +164,224 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905
 [node name="Lift" parent="World/Level2" index="3" unique_id=1988907782 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.475, -0.1, -1.53)
 
-[node name="Level3Test" type="Node3D" parent="World" index="3" unique_id=2067011960]
+[node name="Level3" type="Node3D" parent="World" index="3" unique_id=2067011960]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 8, 0)
 
-[node name="PLATFORM4" parent="World/Level3Test" index="0" unique_id=1970538636 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM4" parent="World/Level3" index="0" unique_id=1970538636 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.001124382, -0.099999905, -6.6379116e-08)
 
-[node name="PLATFORM5" parent="World/Level3Test" index="1" unique_id=1450182810 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM5" parent="World/Level3" index="1" unique_id=1450182810 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, 0.7484319)
 
-[node name="Lift" parent="World/Level3Test" index="2" unique_id=870124601 instance=ExtResource("7_kpet1")]
+[node name="Lift" parent="World/Level3" index="2" unique_id=870124601 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.475, -0.1, -1.53)
 distance = 26.0
 
-[node name="HIDING_PLATFORM" parent="World/Level3Test" index="3" unique_id=1321166245 instance=ExtResource("7_mu5n8")]
+[node name="HIDING_PLATFORM" parent="World/Level3" index="3" unique_id=1321166245 instance=ExtResource("7_mu5n8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.7463238, -0.099999905, 0.75904137)
 
-[node name="HIDING_PLATFORM2" parent="World/Level3Test" index="4" unique_id=1911633970 instance=ExtResource("7_mu5n8")]
+[node name="HIDING_PLATFORM2" parent="World/Level3" index="4" unique_id=1911633970 instance=ExtResource("7_mu5n8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.01566789, -0.099999905, 0.7590413)
 
-[node name="HIDING_PLATFORM3" parent="World/Level3Test" index="5" unique_id=1613325387 instance=ExtResource("7_mu5n8")]
+[node name="HIDING_PLATFORM3" parent="World/Level3" index="5" unique_id=1613325387 instance=ExtResource("7_mu5n8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.01566782, -0.099999905, -0.81854045)
 
-[node name="HIDING_PLATFORM4" parent="World/Level3Test" index="6" unique_id=1979633142 instance=ExtResource("7_mu5n8")]
+[node name="HIDING_PLATFORM4" parent="World/Level3" index="6" unique_id=1979633142 instance=ExtResource("7_mu5n8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.76824117, -0.099999905, -0.80649555)
 
-[node name="HIDING_PLATFORM5" parent="World/Level3Test" index="7" unique_id=1111420984 instance=ExtResource("7_mu5n8")]
+[node name="HIDING_PLATFORM5" parent="World/Level3" index="7" unique_id=1111420984 instance=ExtResource("7_mu5n8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5029223, -0.099999905, -0.80649555)
 
-[node name="Level3Test2" type="Node3D" parent="World" index="4" unique_id=62137424]
+[node name="Level4" type="Node3D" parent="World" index="4" unique_id=62137424]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 12, 0)
 
-[node name="PLATFORM4" parent="World/Level3Test2" index="0" unique_id=690146897 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM4" parent="World/Level4" index="0" unique_id=690146897 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.7560233, -0.10000038, 0.7448699)
 
-[node name="PLATFORM5" parent="World/Level3Test2" index="1" unique_id=1943892036 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM5" parent="World/Level4" index="1" unique_id=1943892036 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, 0.7484319)
 
-[node name="PLATFORM6" parent="World/Level3Test2" index="2" unique_id=1465374223 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM6" parent="World/Level4" index="2" unique_id=1465374223 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.4751472, -0.10000038, -0.76539177)
 
-[node name="Lift" parent="World/Level3Test2" index="3" unique_id=63470958 instance=ExtResource("7_kpet1")]
+[node name="Lift" parent="World/Level4" index="3" unique_id=63470958 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.475, -0.1, -1.53)
 speed = 2.0
 
-[node name="Lift2" parent="World/Level3Test2" index="4" unique_id=945372085 instance=ExtResource("7_kpet1")]
+[node name="Lift2" parent="World/Level4" index="4" unique_id=945372085 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.48591, -0.10000038, 0.7539067)
 distance = 10.0
 
-[node name="PLATFORM7" parent="World/Level3Test2" index="5" unique_id=1849026746 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM7" parent="World/Level4" index="5" unique_id=1849026746 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.011449808, -0.10000038, 0.7448698)
 
-[node name="PLATFORM8" parent="World/Level3Test2" index="6" unique_id=1078146584 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM8" parent="World/Level4" index="6" unique_id=1078146584 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.7197572, -0.10000038, 0.74486977)
 
-[node name="PLATFORM9" parent="World/Level3Test2" index="7" unique_id=349856627 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM9" parent="World/Level4" index="7" unique_id=349856627 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.4465821, 0.82942486, -0.086154826)
 
-[node name="PLATFORM10" parent="World/Level3Test2" index="8" unique_id=1643610059 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM10" parent="World/Level4" index="8" unique_id=1643610059 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.6272141, -0.10000038, -0.77778363)
 
-[node name="Lift3" parent="World/Level3Test2" index="9" unique_id=670866797 instance=ExtResource("7_kpet1")]
+[node name="Lift3" parent="World/Level4" index="9" unique_id=670866797 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.8498436, -0.10000038, -1.5542228)
 distance = 10.0
 speed = 1.5
 
-[node name="PLATFORM12" parent="World/Level3Test2" index="10" unique_id=835675731 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM12" parent="World/Level4" index="10" unique_id=835675731 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.6791583, -0.10000038, -0.7653918)
 
-[node name="HIDING_PLATFORM" parent="World/Level3Test2" index="11" unique_id=630266067 instance=ExtResource("7_mu5n8")]
+[node name="HIDING_PLATFORM" parent="World/Level4" index="11" unique_id=630266067 instance=ExtResource("7_mu5n8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.3502336e-07, 1.3428221, -1.5444871)
 
-[node name="PLATFORM13" parent="World/Level3Test2" index="12" unique_id=1380405667 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM13" parent="World/Level4" index="12" unique_id=1380405667 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.86750096, -0.10000038, -0.7777836)
 
-[node name="Level3Test4" type="Node3D" parent="World" index="5" unique_id=10924569]
+[node name="Level5" type="Node3D" parent="World" index="5" unique_id=10924569]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 16, 0)
 
-[node name="PLATFORM4" parent="World/Level3Test4" index="0" unique_id=1411732739 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM4" parent="World/Level5" index="0" unique_id=1411732739 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(2, 0, 0, 0, 0.2, 0, 0, 0, 0.1, 0.08189061, -0.10000038, 0.7561992)
 
-[node name="PLATFORM5" parent="World/Level3Test4" index="1" unique_id=1376846056 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM5" parent="World/Level5" index="1" unique_id=1376846056 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, 0.7484319)
 
-[node name="PLATFORM6" parent="World/Level3Test4" index="2" unique_id=1322212580 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM6" parent="World/Level5" index="2" unique_id=1322212580 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.458433, -0.10000038, -0.76539177)
 
-[node name="Lift" parent="World/Level3Test4" index="3" unique_id=1157987576 instance=ExtResource("7_kpet1")]
+[node name="Lift" parent="World/Level5" index="3" unique_id=1157987576 instance=ExtResource("7_kpet1")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.475, -0.1, -1.53)
 
-[node name="PLATFORM7" parent="World/Level3Test4" index="4" unique_id=1337207128 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM7" parent="World/Level5" index="4" unique_id=1337207128 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.3069377, -0.10000038, 0.7503422)
 
-[node name="PLATFORM8" parent="World/Level3Test4" index="5" unique_id=1734770515 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM8" parent="World/Level5" index="5" unique_id=1734770515 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(2, 0, 0, 0, 0.2, 0, 0, 0, 0.1, 0.08189055, -0.10000038, -0.7195522)
 
-[node name="PLATFORM9" parent="World/Level3Test4" index="6" unique_id=2066045949 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM9" parent="World/Level5" index="6" unique_id=2066045949 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.2997875, -0.10000038, -0.015468362)
 
-[node name="PLATFORM10" parent="World/Level3Test4" index="7" unique_id=577077464 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM10" parent="World/Level5" index="7" unique_id=577077464 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.3069377, -0.10000038, -0.7623784)
 
-[node name="Level3Test5" type="Node3D" parent="World" index="6" unique_id=1429111732 node_paths=PackedStringArray("nodes_to_disable")]
+[node name="Level6" type="Node3D" parent="World" index="6" unique_id=1429111732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
-script = ExtResource("7_hx1qu")
-nodes_to_disable = [NodePath("PLATFORM13"), NodePath("PLATFORM12")]
 
-[node name="PLATFORM4" parent="World/Level3Test5" index="0" unique_id=1657566561 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.099999905, 0)
-
-[node name="PLATFORM5" parent="World/Level3Test5" index="1" unique_id=850764938 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.284105, -0.10000038, 0.7484319)
-
-[node name="PLATFORM6" parent="World/Level3Test5" index="2" unique_id=1681820571 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.2031131, -0.10000038, -0.76539177)
-
-[node name="PLATFORM7" parent="World/Level3Test5" index="3" unique_id=892188370 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.5441667, -0.10000038, -1.2155187)
-
-[node name="PLATFORM8" parent="World/Level3Test5" index="4" unique_id=1221098441 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.783152, -0.10000038, -1.5567746)
-
-[node name="PLATFORM9" parent="World/Level3Test5" index="5" unique_id=20582561 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.0056911707, -0.10000038, -1.2633052)
-
-[node name="PLATFORM10" parent="World/Level3Test5" index="6" unique_id=591246359 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.8080549, -0.10000038, -1.5758628)
-
-[node name="PLATFORM11" parent="World/Level3Test5" index="7" unique_id=778936350 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.6631651, -0.10000038, -0.4178056)
-
-[node name="PLATFORM12" parent="World/Level3Test5" index="8" unique_id=1805026091 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.1787262, -0.10000038, 0.34416175)
-
-[node name="PLATFORM13" parent="World/Level3Test5" index="9" unique_id=1396886971 instance=ExtResource("8_hx1qu")]
+[node name="PLATFORM13" parent="World/Level6" index="0" unique_id=1396886971 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.42276394, -0.11408043, 0.72081816)
 
-[node name="PLATFORM14" parent="World/Level3Test5" index="10" unique_id=2100145935 instance=ExtResource("8_hx1qu")]
+[node name="Button" parent="World/Level6" index="1" unique_id=211387759 instance=ExtResource("8_mu5n8")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.24520041, 1.4361238, 3.1883023)
+
+[node name="ButtonRemover" type="Node" parent="World/Level6" index="2" unique_id=352935577 node_paths=PackedStringArray("nodes_to_disable")]
+script = ExtResource("7_hx1qu")
+nodes_to_disable = [NodePath("../Phase1"), NodePath("../PLATFORM13")]
+
+[node name="ButtonEnabler" type="Node" parent="World/Level6" index="3" unique_id=2088392106 node_paths=PackedStringArray("nodes_to_enable")]
+script = ExtResource("10_4hlas")
+nodes_to_enable = [NodePath("../Phase2")]
+
+[node name="Label3D" type="Label3D" parent="World/Level6" index="4" unique_id=1400655308]
+transform = Transform3D(-1, 8.742278e-08, 3.821371e-15, 0, -4.371139e-08, 1, 8.742278e-08, 1, 4.371139e-08, -0.42924023, 0.026679993, 0.9866909)
+pixel_size = 0.002
+modulate = Color(0.87038684, 5.655363e-06, 7.70092e-07, 1)
+text = "Stand here"
+
+[node name="Phase1" type="Node3D" parent="World/Level6" index="5" unique_id=1604462794]
+
+[node name="PLATFORM4" parent="World/Level6/Phase1" index="0" unique_id=1657566561 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.5174528, -0.10000038, 0)
+
+[node name="PLATFORM5" parent="World/Level6/Phase1" index="1" unique_id=850764938 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.284105, -0.10000038, 0.7484319)
+
+[node name="PLATFORM6" parent="World/Level6/Phase1" index="2" unique_id=1681820571 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.2031131, -0.10000038, -0.76539177)
+
+[node name="PLATFORM7" parent="World/Level6/Phase1" index="3" unique_id=892188370 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.5441667, -0.10000038, -1.2155187)
+
+[node name="PLATFORM8" parent="World/Level6/Phase1" index="4" unique_id=1221098441 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.783152, -0.10000038, -1.5567746)
+
+[node name="PLATFORM9" parent="World/Level6/Phase1" index="5" unique_id=20582561 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.0056911707, -0.10000038, -1.2633052)
+
+[node name="PLATFORM10" parent="World/Level6/Phase1" index="6" unique_id=591246359 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.8080549, -0.10000038, -1.5758628)
+
+[node name="PLATFORM11" parent="World/Level6/Phase1" index="7" unique_id=778936350 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.6631651, -0.10000038, -0.4178056)
+
+[node name="PLATFORM12" parent="World/Level6/Phase1" index="8" unique_id=1805026091 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.1787262, -0.10000038, 0.34416175)
+
+[node name="PLATFORM14" parent="World/Level6/Phase1" index="9" unique_id=2100145935 instance=ExtResource("8_hx1qu")]
 transform = Transform3D(0.1, 0, 0, 0, 3, 0, 0, 0, 2, 0.14160478, 1.0178261, 1.4803982)
 
-[node name="Button" parent="World/Level3Test5" index="11" unique_id=211387759 instance=ExtResource("8_mu5n8")]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.057997763, 1.6983261, 3.4236155)
+[node name="Phase2" type="Node3D" parent="World/Level6" index="6" unique_id=177466214]
 
-[connection signal="pressed" from="World/Level3Test5/Button" to="World/Level3Test5" method="_on_button_pressed"]
+[node name="PLATFORM2" parent="World/Level6/Phase2" index="0" unique_id=1308075761 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.6156615, 0, 0.07880107, 0, 0.2, 0, -0.7880107, 0, 0.06156615, 0.27755848, -0.10000038, -0.093039125)
+
+[node name="PLATFORM3" parent="World/Level6/Phase2" index="1" unique_id=421848497 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.94571584, -0.10000038, -0.87857795)
+
+[node name="Lift" parent="World/Level6/Phase2" index="2" unique_id=1591574718 instance=ExtResource("7_kpet1")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.371144, -0.10000038, -1.608453)
+
+[node name="Level7" type="Node3D" parent="World" index="7" unique_id=1115556488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 24, 0)
+
+[node name="PLATFORM3" parent="World/Level7" index="0" unique_id=1460211663 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.5484947, -0.10000038, -1.1110064)
+
+[node name="HIDING_PLATFORM2" parent="World/Level7" index="1" unique_id=1898224636 instance=ExtResource("7_mu5n8")]
+transform = Transform3D(0.5099292, 0, -0.09404425, 0, 0.2, 0, 1.4106637, 0, 0.03399528, -1.0049866, -0.10000038, -0.0022765398)
+secondsOn = 3
+
+[node name="HIDING_PLATFORM3" parent="World/Level7" index="2" unique_id=305685486 instance=ExtResource("7_mu5n8")]
+transform = Transform3D(-1.4999206, 0, -0.0010297317, 0, 0.20000003, 0, 0.015445948, 0, -0.09999471, 0.18227726, -0.10000038, 0.62006867)
+secondsOn = 3
+timeOffset = 1
+
+[node name="PLATFORM4" parent="World/Level7" index="3" unique_id=301705744 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.3509902, -0.10000038, 0.8111099)
+
+[node name="Button" parent="World/Level7" index="4" unique_id=1875824384 instance=ExtResource("8_mu5n8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.676336, 0, 0.830034)
+
+[node name="Phase1" type="Node3D" parent="World/Level7" index="5" unique_id=1240110773]
+
+[node name="PLATFORM2" parent="World/Level7/Phase1" index="0" unique_id=1826612599 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.553812, -0.10000038, -1.8084534)
+
+[node name="HIDING_PLATFORM" parent="World/Level7/Phase1" index="1" unique_id=2128540937 instance=ExtResource("7_mu5n8")]
+transform = Transform3D(1.5, 0, 0, 0, 0.2, 0, 0, 0, 0.1, -0.64096177, -0.10000038, -1.5519726)
+
+[node name="Phase2" type="Node3D" parent="World/Level7" index="6" unique_id=1636908214]
+
+[node name="Lift" parent="World/Level7/Phase2" index="0" unique_id=660516507 instance=ExtResource("7_kpet1")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.1756234, -0.10000038, -1.8584042)
+
+[node name="ButtonDisabler" type="Node" parent="World/Level7" index="7" unique_id=1050516091 node_paths=PackedStringArray("nodes_to_disable")]
+script = ExtResource("7_hx1qu")
+nodes_to_disable = [NodePath("../Phase1")]
+
+[node name="ButtenEnabler" type="Node" parent="World/Level7" index="8" unique_id=1185625681 node_paths=PackedStringArray("nodes_to_enable")]
+script = ExtResource("10_4hlas")
+nodes_to_enable = [NodePath("../Phase2")]
+
+[node name="Level8" type="Node3D" parent="World" index="8" unique_id=1399874005]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 28, 0)
+
+[node name="PLATFORM3" parent="World/Level8" index="0" unique_id=52964119 instance=ExtResource("8_hx1qu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.5484947, -0.10000038, -1.1110064)
+
+[connection signal="pressed" from="World/Level6/Button" to="World/Level6/ButtonRemover" method="_on_button_pressed"]
+[connection signal="pressed" from="World/Level7/Button" to="World/Level7/ButtonDisabler" method="_on_button_pressed"]
+[connection signal="pressed" from="World/Level7/Button" to="World/Level7/ButtenEnabler" method="_on_button_pressed"]
 
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand"]
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L"]
