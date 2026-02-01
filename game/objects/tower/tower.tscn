@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dcm35nplhutem" path="res://assets/3d/terrain/terrain.tscn" id="4_dao0i"]
 [ext_resource type="PackedScene" uid="uid://c02c0qrenyn3a" path="res://assets/3d/tower/pillar.tscn" id="5_dao0i"]
 [ext_resource type="PackedScene" uid="uid://bops470mqdfc8" path="res://assets/3d/tower/wall.tscn" id="6_bcneb"]
+[ext_resource type="PackedScene" uid="uid://hdym54tel2s1" path="res://assets/3d/tower/wall_2.tscn" id="6_olapf"]
 [ext_resource type="PackedScene" uid="uid://7oxobibx6y8q" path="res://game/objects/button/to_main_scene_button.tscn" id="6_rtrpu"]
 [ext_resource type="AudioStream" uid="uid://ctub0y0xjxow1" path="res://assets/TheRover.mp3" id="7_bcneb"]
 [ext_resource type="Script" uid="uid://dyg04ym150j4n" path="res://game/objects/tower/music.gd" id="7_m8rv6"]
@@ -213,6 +214,48 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.0
 
 [node name="wall4" parent="Tower_Walls_5" unique_id=82610131 instance=ExtResource("6_bcneb")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.2796905, 0, 0.07816744)
+
+[node name="Tower_Walls_7" type="Node3D" parent="." unique_id=2077975517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 24, 0)
+
+[node name="pillar" parent="Tower_Walls_7" unique_id=1301081871 instance=ExtResource("5_dao0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.872639, 3.7252903e-08, -2.178863)
+
+[node name="pillar2" parent="Tower_Walls_7" unique_id=321355451 instance=ExtResource("5_dao0i")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.0325909, 3.7252903e-08, -2.178863)
+
+[node name="pillar3" parent="Tower_Walls_7" unique_id=685359413 instance=ExtResource("5_dao0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.872639, 3.7252903e-08, 2.1157956)
+
+[node name="pillar4" parent="Tower_Walls_7" unique_id=1020619064 instance=ExtResource("5_dao0i")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.0325909, 3.7252903e-08, 2.1157956)
+
+[node name="wall" parent="Tower_Walls_7" unique_id=702860815 instance=ExtResource("6_bcneb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.3145711)
+
+[node name="wall2" parent="Tower_Walls_7" unique_id=924840349 instance=ExtResource("6_bcneb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.3139138)
+
+[node name="wall3" parent="Tower_Walls_7" unique_id=1727170736 instance=ExtResource("6_bcneb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.0352254, 0, 0.07816744)
+
+[node name="wall_2" parent="Tower_Walls_7" unique_id=404144062 instance=ExtResource("6_olapf")]
+transform = Transform3D(-4.371139e-08, 0, 1.1, 0, 1, 0, -1, 0, -4.8082526e-08, 2.032021, 0, -0.027869381)
+
+[node name="Tower_Walls_6" type="Node3D" parent="." unique_id=1280003693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+
+[node name="pillar" parent="Tower_Walls_6" unique_id=124178000 instance=ExtResource("5_dao0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.872639, 3.7252903e-08, -2.178863)
+
+[node name="pillar2" parent="Tower_Walls_6" unique_id=56336603 instance=ExtResource("5_dao0i")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.0325909, 3.7252903e-08, -2.178863)
+
+[node name="pillar3" parent="Tower_Walls_6" unique_id=1963261677 instance=ExtResource("5_dao0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.872639, 3.7252903e-08, 2.1157956)
+
+[node name="pillar4" parent="Tower_Walls_6" unique_id=682170435 instance=ExtResource("5_dao0i")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.0325909, 3.7252903e-08, 2.1157956)
 
 [node name="ToMainSceneButton" parent="." unique_id=1022452082 instance=ExtResource("6_rtrpu")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.6692312, 0, 0)
