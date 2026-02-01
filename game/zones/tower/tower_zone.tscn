@@ -220,13 +220,13 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.011449808, -0.1000003
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.7197572, -0.10000038, 0.74486977)
 
 [node name="PLATFORM9" parent="World/Level4" index="7" unique_id=349856627 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.47, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.4978352, 0.82942486, -0.08615483)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.4978352, 0.82942486, -0.08615483)
 
 [node name="PLATFORM10" parent="World/Level4" index="8" unique_id=1643610059 instance=ExtResource("8_hx1qu")]
-transform = Transform3D(0.4, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.6383342, -0.10000038, -0.7913765)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.532561, -0.10000038, -0.7199509)
 
 [node name="Lift3" parent="World/Level4" index="9" unique_id=670866797 instance=ExtResource("7_kpet1")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.8498436, -0.10000038, -1.5542228)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -0.6060092, -0.10000038, -1.4638431)
 distance = 10.0
 speed = 1.5
 
@@ -234,11 +234,11 @@ speed = 1.5
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.6791583, -0.10000038, -0.7653918)
 
 [node name="HIDING_PLATFORM" parent="World/Level4" index="11" unique_id=630266067 instance=ExtResource("7_mu5n8")]
-transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.3502336e-07, 1.3428221, -1.5444871)
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 0.2041736, 1.3428221, -1.544505)
 
 [node name="Lift4" parent="World/Level4" index="12" unique_id=61546852 instance=ExtResource("7_kpet1")]
-transform = Transform3D(0.73, 0, 0, 0, 0.2, 0, 0, 0, 0.31, -0.95261985, -0.1194067, -0.9600691)
-distance = 10.0
+transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.4105321, -0.1194067, -1.4428989)
+distance = 5.0
 speed = 2.0
 
 [node name="Level5" type="Node3D" parent="World" index="5" unique_id=10924569]
