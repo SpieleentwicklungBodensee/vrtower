@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dcuc8o3tmktxy"]
+
+[ext_resource type="PackedScene" uid="uid://comvt46b7wla4" path="res://assets/3d/tower/wall_top_2.fbx" id="1_s17rd"]
+[ext_resource type="Texture2D" uid="uid://b6346dlhuaqw5" path="res://assets/3d/tower/wall_BaseColor.png" id="2_d1nxq"]
+[ext_resource type="Texture2D" uid="uid://soe6j3maxla2" path="res://assets/3d/tower/wall_Normal.png" id="3_03emq"]
+[ext_resource type="Texture2D" uid="uid://hgyx57wrr755" path="res://assets/3d/tower/wall_Roughness.png" id="4_pv17r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dung5"]
+albedo_texture = ExtResource("2_d1nxq")
+roughness_texture = ExtResource("4_pv17r")
+normal_enabled = true
+normal_texture = ExtResource("3_03emq")
+
+[node name="wall_top_2" unique_id=861654804 instance=ExtResource("1_s17rd")]
+
+[node name="wall_top_2" parent="." index="0" unique_id=2022541458]
+surface_material_override/0 = SubResource("StandardMaterial3D_dung5")
