@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://1iumvalro88v" path="res://assets/3d/tower/wall_btm.tscn" id="7_pncay"]
 [ext_resource type="AudioStream" uid="uid://bicnmagvmvt8a" path="res://assets/TheTowerCreepy.mp3" id="8_m8rv6"]
 [ext_resource type="PackedScene" uid="uid://dcuc8o3tmktxy" path="res://assets/3d/tower/wall_top_2.tscn" id="8_pqlgv"]
+[ext_resource type="PackedScene" uid="uid://maqd8yp34kna" path="res://game/objects/tower/taubendinger_export2.glb" id="12_pncay"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bcneb"]
 size = Vector3(20, 1, 20)
@@ -322,3 +323,125 @@ script = ExtResource("7_m8rv6")
 stream = ExtResource("8_m8rv6")
 volume_db = -10.008
 autoplay = true
+
+[node name="taubendinger-group" type="Node3D" parent="." unique_id=2111900906]
+
+[node name="taubendinger_export2" parent="taubendinger-group" unique_id=1262287591 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export5" parent="taubendinger-group" unique_id=2054802636 instance=ExtResource("12_pncay")]
+transform = Transform3D(-7.86805e-09, 0, -0.18, 0, 0.18, 0, 0.18, 0, -7.86805e-09, 0.00021021068, 8.154939, -2.312378)
+
+[node name="taubendinger_export6" parent="taubendinger-group" unique_id=561315147 instance=ExtResource("12_pncay")]
+transform = Transform3D(-7.86805e-09, 0, -0.18, 0, 0.18, 0, 0.18, 0, -7.86805e-09, -0.8172395, 8.154939, -2.312378)
+
+[node name="taubendinger_export7" parent="taubendinger-group" unique_id=853057211 instance=ExtResource("12_pncay")]
+transform = Transform3D(-7.86805e-09, 0, -0.18, 0, 0.18, 0, 0.18, 0, -7.86805e-09, 1.1870631, 8.154939, -2.362372)
+
+[node name="taubendinger_export3" parent="taubendinger-group" unique_id=1893704012 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-group" unique_id=1063827212 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)
+
+[node name="taubendinger-supergroup" type="Node3D" parent="." unique_id=2125178190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.01, 0)
+
+[node name="taubendinger-group2" type="Node3D" parent="taubendinger-supergroup" unique_id=311002129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.004784, 0)
+
+[node name="taubendinger_export2" parent="taubendinger-supergroup/taubendinger-group2" unique_id=1762772159 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export3" parent="taubendinger-supergroup/taubendinger-group2" unique_id=1551297104 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-supergroup/taubendinger-group2" unique_id=1919270379 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)
+
+[node name="taubendinger-group3" type="Node3D" parent="taubendinger-supergroup" unique_id=734746601]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 16.004784, 0.19075298)
+
+[node name="taubendinger_export2" parent="taubendinger-supergroup/taubendinger-group3" unique_id=860865145 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export3" parent="taubendinger-supergroup/taubendinger-group3" unique_id=243047602 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-supergroup/taubendinger-group3" unique_id=1486229165 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)
+
+[node name="taubendinger-group4" type="Node3D" parent="taubendinger-supergroup" unique_id=1736087396]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.17555547, 16.004784, 0)
+
+[node name="taubendinger_export2" parent="taubendinger-supergroup/taubendinger-group4" unique_id=765875618 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export3" parent="taubendinger-supergroup/taubendinger-group4" unique_id=538057448 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-supergroup/taubendinger-group4" unique_id=1549306510 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)
+
+[node name="taubendinger-group5" type="Node3D" parent="taubendinger-supergroup" unique_id=538396110]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 0, 16.004784, -0.29923677)
+
+[node name="taubendinger_export2" parent="taubendinger-supergroup/taubendinger-group5" unique_id=2052393753 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export3" parent="taubendinger-supergroup/taubendinger-group5" unique_id=1317800366 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-supergroup/taubendinger-group5" unique_id=1795198543 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)
+
+[node name="taubendinger-supergroup2" type="Node3D" parent="." unique_id=2040831760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.99, 0)
+
+[node name="taubendinger-group2" type="Node3D" parent="taubendinger-supergroup2" unique_id=2068855241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.004784, 0)
+
+[node name="taubendinger_export2" parent="taubendinger-supergroup2/taubendinger-group2" unique_id=810759531 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export3" parent="taubendinger-supergroup2/taubendinger-group2" unique_id=1799015765 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-supergroup2/taubendinger-group2" unique_id=1688162774 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)
+
+[node name="taubendinger-group3" type="Node3D" parent="taubendinger-supergroup2" unique_id=1891369754]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 16.004784, 0.19075298)
+
+[node name="taubendinger_export2" parent="taubendinger-supergroup2/taubendinger-group3" unique_id=356551395 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export3" parent="taubendinger-supergroup2/taubendinger-group3" unique_id=244203650 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-supergroup2/taubendinger-group3" unique_id=1642291291 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)
+
+[node name="taubendinger-group4" type="Node3D" parent="taubendinger-supergroup2" unique_id=664804629]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.031989217, 16.004784, 0)
+
+[node name="taubendinger_export2" parent="taubendinger-supergroup2/taubendinger-group4" unique_id=1143754798 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export3" parent="taubendinger-supergroup2/taubendinger-group4" unique_id=318761517 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-supergroup2/taubendinger-group4" unique_id=1865650280 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)
+
+[node name="taubendinger-group5" type="Node3D" parent="taubendinger-supergroup2" unique_id=991658899]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 0, 16.004784, -0.29469752)
+
+[node name="taubendinger_export2" parent="taubendinger-supergroup2/taubendinger-group5" unique_id=1870621840 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, -1.1913066)
+
+[node name="taubendinger_export3" parent="taubendinger-supergroup2/taubendinger-group5" unique_id=747107302 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 0.015406549)
+
+[node name="taubendinger_export4" parent="taubendinger-supergroup2/taubendinger-group5" unique_id=842881628 instance=ExtResource("12_pncay")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.0069265, 1.2657397)

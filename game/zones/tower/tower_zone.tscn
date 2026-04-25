@@ -96,7 +96,6 @@ enabled = false
 transform = Transform3D(0.0871558, 4.7521088e-08, -0.996195, 1.3461069e-07, -1, -3.5925666e-08, -0.996195, -1.3096799e-07, -0.0871558, -0.07318163, -0.03781247, 0.2008112)
 
 [node name="FunctionTeleport" parent="XROrigin3D/LeftHand" index="1" unique_id=436698061 instance=ExtResource("3_mu5n8")]
-enabled = false
 
 [node name="AnimationTree" parent="XROrigin3D/RightHand/CollisionHandRight/RightHand" parent_id_path=PackedInt32Array(440995779) index="1"]
 tree_root = SubResource("AnimationNodeBlendTree_i0ln7")
