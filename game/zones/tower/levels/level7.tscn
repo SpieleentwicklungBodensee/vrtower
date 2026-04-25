@@ -36,6 +36,7 @@ transform = Transform3D(1.5, 0, 0, 0, 0.2, 0, 0, 0, 0.1, -0.64096177, -0.1000003
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.5484947, -0.10000038, -1.1110064)
 
 [node name="Phase2" type="Node3D" parent="." unique_id=1771827960]
+visible = false
 
 [node name="Lift" parent="Phase2" unique_id=1586812148 instance=ExtResource("5_aff7o")]
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.1756234, -0.10000038, -1.8584042)
