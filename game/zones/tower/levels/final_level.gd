@@ -18,4 +18,3 @@ func _on_button_pressed() -> void:
 	
 	for level in levelsToRemove:
 		VrTowerNodeManager.disable_node(level)
-

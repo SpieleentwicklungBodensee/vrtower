@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="4_8hucd"]
 [ext_resource type="PackedScene" uid="uid://c20dnny874i6s" path="res://game/objects/lift/lift.tscn" id="5_aff7o"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_rdrdx"]
+size = Vector3(7, 0.001, 7)
+
 [node name="Level7" type="Node3D" unique_id=921268320]
 script = ExtResource("1_rdrdx")
 
@@ -42,4 +45,13 @@ visible = false
 transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, -1.1756234, -0.10000038, -1.8584042)
 speed = 2.0
 
+[node name="ResetTrigger" type="Area3D" parent="." unique_id=1847503411]
+collision_layer = 128
+collision_mask = 128
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ResetTrigger" unique_id=1262170102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1995001, 0)
+shape = SubResource("BoxShape3D_rdrdx")
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="body_entered" from="ResetTrigger" to="." method="_on_reset_trigger_body_entered"]

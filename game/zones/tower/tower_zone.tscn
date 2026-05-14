@@ -109,6 +109,9 @@ enabled = false
 [node name="MovementCrouch" parent="XROrigin3D/RightHand/CollisionHandRight" parent_id_path=PackedInt32Array(1520304870) index="7" unique_id=786280875]
 enabled = false
 
+[node name="PlayerBody" parent="XROrigin3D" index="3" unique_id=1130333514]
+collision_layer = 524416
+
 [node name="World" type="Node3D" parent="." index="1" unique_id=700250048]
 
 [node name="Tower" parent="World" index="0" unique_id=286459706 instance=ExtResource("4_x2qe8")]

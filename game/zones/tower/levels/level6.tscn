@@ -5,6 +5,23 @@
 [ext_resource type="PackedScene" uid="uid://cgn412bnwlaug" path="res://game/objects/button/button.tscn" id="2_q2xap"]
 [ext_resource type="PackedScene" uid="uid://c20dnny874i6s" path="res://game/objects/lift/lift.tscn" id="5_2qhlq"]
 
+[sub_resource type="GDScript" id="GDScript_txhmq"]
+script/source = "extends Area3D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q2xap"]
+size = Vector3(7, 0.001, 7)
+
 [node name="Level6" type="Node3D" unique_id=236357872]
 script = ExtResource("1_q2xap")
 
@@ -58,4 +75,14 @@ transform = Transform3D(0.7, 0, 0, 0, 0.2, 0, 0, 0, 0.7, 1.371144, -0.10000038, 
 [node name="PLATFORM3" parent="Phase2" unique_id=104790273 instance=ExtResource("1_52koi")]
 transform = Transform3D(-0.6184435, 0, 0.090850815, 0, 0.2, 0, -1.3445921, 0, -0.041786723, 0.8536281, -0.100000024, 0.40722954)
 
+[node name="ResetTrigger" type="Area3D" parent="." unique_id=1903954011]
+collision_layer = 128
+collision_mask = 128
+script = SubResource("GDScript_txhmq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ResetTrigger" unique_id=896753128]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.9934998, 0)
+shape = SubResource("BoxShape3D_q2xap")
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="body_entered" from="ResetTrigger" to="." method="_on_reset_trigger_body_entered"]

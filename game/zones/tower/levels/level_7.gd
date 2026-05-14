@@ -21,3 +21,10 @@ func _on_button_pressed() -> void:
 		VrTowerNodeManager.disable_node(phase2)
 		VrTowerNodeManager.enable_node(phase1)
 		phase1_active = true
+
+func reset() -> void:
+	phase1_active = false
+	_on_button_pressed()
+
+func _on_reset_trigger_body_entered(body: Node3D) -> void:
+	reset()
