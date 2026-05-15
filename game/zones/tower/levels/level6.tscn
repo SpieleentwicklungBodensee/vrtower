@@ -81,7 +81,7 @@ collision_mask = 128
 script = SubResource("GDScript_txhmq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ResetTrigger" unique_id=896753128]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.9934998, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.380417, 0)
 shape = SubResource("BoxShape3D_q2xap")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

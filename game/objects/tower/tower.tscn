@@ -449,31 +449,39 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.0659473, 4.006926
 [node name="ReflectionProbe" type="ReflectionProbe" parent="." unique_id=1638087389]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4974444, 0)
 size = Vector3(7, 7, 7)
+ambient_mode = 0
 
 [node name="ReflectionProbe2" type="ReflectionProbe" parent="." unique_id=1585757965]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.265605, 0)
 size = Vector3(7, 7, 7)
+ambient_mode = 0
 
 [node name="ReflectionProbe3" type="ReflectionProbe" parent="." unique_id=1500897864]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.903295, 0)
 size = Vector3(7, 7, 7)
+ambient_mode = 0
 
 [node name="ReflectionProbe4" type="ReflectionProbe" parent="." unique_id=756421416]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.23954, 0)
 size = Vector3(7, 7, 7)
+ambient_mode = 0
 
 [node name="ReflectionProbe5" type="ReflectionProbe" parent="." unique_id=1219722194]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.786673, 0)
 size = Vector3(7, 7, 7)
+ambient_mode = 0
 
 [node name="ReflectionProbe6" type="ReflectionProbe" parent="." unique_id=1291731400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.879942, 0)
 size = Vector3(7, 7, 7)
+ambient_mode = 0
 
 [node name="ReflectionProbe7" type="ReflectionProbe" parent="." unique_id=915566774]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25.88236, 0)
 size = Vector3(7, 7, 7)
+ambient_mode = 0
 
 [node name="ReflectionProbe8" type="ReflectionProbe" parent="." unique_id=1105324302]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.269075, 0)
 size = Vector3(7, 7, 7)
+ambient_mode = 0

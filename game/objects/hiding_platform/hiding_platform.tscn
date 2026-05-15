@@ -11,7 +11,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1g2xq"]
 render_priority = 0
 shader = ExtResource("3_mwv3i")
-shader_parameter/albedo = Color(0.74603474, 0.8193202, 0.85072815, 0.11764706)
+shader_parameter/albedo = Color(0.74509805, 0.81960785, 0.8509804, 0.3529412)
 shader_parameter/roughness = 0.150000007125
 shader_parameter/normal_strength = 1.0
 shader_parameter/edge_color = Color(0, 0, 0, 1)
